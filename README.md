@@ -1,7 +1,8 @@
 # LSG-SAM: Latent-Stability Guided Segment Anything Model for Reliable Medical Image Segmentation
 
-> **Paper:** *Latent-Stability Guided SAM for Reliable Medical Image Segmentation*  
-> **Venue:** ECCV 2025 (submitted)
+> **Paper:** *Latent-Stability Gated SAM: Detecting Hallucinated Segmentations under
+Domain Shift*  
+> **Venue:** CogVL, CVPR 2026
 
 LSG-SAM is a **training-free**, **test-time** reliability wrapper around the Segment Anything Model (SAM). It detects when SAM's predictions are unstable under minor prompt perturbations and automatically refines or replaces them — without requiring any fine-tuning or additional training data.
 
