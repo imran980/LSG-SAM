@@ -1,0 +1,6975 @@
+{
+  "dataset": "busi_malignant",
+  "n_images": 210,
+  "time_minutes": 9.7,
+  "config": {
+    "alpha": 0.6,
+    "beta": 0.4,
+    "tau_semantic": -0.05,
+    "tau_stability": 0.3,
+    "top_k": 5
+  },
+  "summary": {
+    "SAM (single)": {
+      "iou": 0.5303,
+      "dice": 0.6447,
+      "hallucination_rate": 0.1048
+    },
+    "SAM (best conf)": {
+      "iou": 0.5955,
+      "dice": 0.7273,
+      "hallucination_rate": 0.0238
+    },
+    "Random-5": {
+      "iou": 0.6179,
+      "dice": 0.749,
+      "hallucination_rate": 0.0143
+    },
+    "CogVL (ours)": {
+      "iou": 0.6581,
+      "dice": 0.7833,
+      "hallucination_rate": 0.0048
+    },
+    "Oracle": {
+      "iou": 0.7598,
+      "dice": 0.8611,
+      "hallucination_rate": 0.0
+    }
+  },
+  "reliability": {
+    "n_flagged": 2,
+    "flag_precision": 0.0
+  },
+  "per_image": [
+    {
+      "image": "malignant (1)",
+      "SAM (single)": {
+        "iou": 0.6893486342330694,
+        "dice": 0.8161117489475699,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6654861452697164,
+        "dice": 0.7991494221189628,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.38352540453279577,
+        "dice": 0.5544175817462621,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6892972623410217,
+        "dice": 0.8160757466519495,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.851199785084479,
+        "dice": 0.9196195807095287,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0508,
+      "cogvl_stability": 0.6538,
+      "cogvl_score": 0.292,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5337
+    },
+    {
+      "image": "malignant (10)",
+      "SAM (single)": {
+        "iou": 0.14248569942797712,
+        "dice": 0.2494310423304506,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6658860265417642,
+        "dice": 0.7994376757263355,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.36422777965528896,
+        "dice": 0.5339691583575896,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6789015051491946,
+        "dice": 0.8087448883296634,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8130747366661093,
+        "dice": 0.8969015123570638,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0371,
+      "cogvl_stability": 0.3978,
+      "cogvl_score": 0.1814,
+      "cogvl_unreliable": false,
+      "global_stability": 0.321
+    },
+    {
+      "image": "malignant (100)",
+      "SAM (single)": {
+        "iou": 0.4678887641850605,
+        "dice": 0.6374989380681335,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.44878992015968067,
+        "dice": 0.6195376070951909,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5166904954310935,
+        "dice": 0.6813393991557031,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4994777265745008,
+        "dice": 0.6662022619242747,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7528457182884829,
+        "dice": 0.8589982682829359,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0608,
+      "cogvl_stability": 0.6799,
+      "cogvl_score": 0.3084,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6035
+    },
+    {
+      "image": "malignant (101)",
+      "SAM (single)": {
+        "iou": 0.6558101333937523,
+        "dice": 0.792132044813136,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6154717968091599,
+        "dice": 0.7619715776218744,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6022681011922071,
+        "dice": 0.751769445755145,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6421243465062679,
+        "dice": 0.782065435997501,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7693543287168785,
+        "dice": 0.86964415914907,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.127,
+      "cogvl_stability": 0.8139,
+      "cogvl_score": 0.4017,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7338
+    },
+    {
+      "image": "malignant (102)",
+      "SAM (single)": {
+        "iou": 0.5585132081352763,
+        "dice": 0.7167256654866903,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5865478952860013,
+        "dice": 0.7394014350638515,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5865478952860013,
+        "dice": 0.7394014350638515,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5933190458442043,
+        "dice": 0.7447586186730606,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6551876649026217,
+        "dice": 0.7916778004035787,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1128,
+      "cogvl_stability": 0.7606,
+      "cogvl_score": 0.3719,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6284
+    },
+    {
+      "image": "malignant (103)",
+      "SAM (single)": {
+        "iou": 0.6354035337755121,
+        "dice": 0.777060243117626,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.40032713726528374,
+        "dice": 0.5717623069807639,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7189597749745466,
+        "dice": 0.8365056418905352,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7189597749745466,
+        "dice": 0.8365056418905352,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.723173594807347,
+        "dice": 0.8393508314966941,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0911,
+      "cogvl_stability": 0.6222,
+      "cogvl_score": 0.3035,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5162
+    },
+    {
+      "image": "malignant (104)",
+      "SAM (single)": {
+        "iou": 0.5315168257157208,
+        "dice": 0.6941051078133967,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5262977142929827,
+        "dice": 0.6896396546551552,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6938664260606402,
+        "dice": 0.8192693536931818,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6751819666512088,
+        "dice": 0.8060998507534544,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7395155494260018,
+        "dice": 0.8502546006789351,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0979,
+      "cogvl_stability": 0.6626,
+      "cogvl_score": 0.3238,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5555
+    },
+    {
+      "image": "malignant (105)",
+      "SAM (single)": {
+        "iou": 0.6248748748748749,
+        "dice": 0.7691359926074234,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4901863763813294,
+        "dice": 0.6578859988931931,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4901863763813294,
+        "dice": 0.6578859988931931,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7022407022407022,
+        "dice": 0.8250780295833898,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7129877693651718,
+        "dice": 0.8324493404052767,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0378,
+      "cogvl_stability": 0.7338,
+      "cogvl_score": 0.3162,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6605
+    },
+    {
+      "image": "malignant (106)",
+      "SAM (single)": {
+        "iou": 0.04587616912730927,
+        "dice": 0.08772772624810612,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.35005064923105256,
+        "dice": 0.5185740985798284,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.2278580642340235,
+        "dice": 0.3711472374067413,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.42339897401952675,
+        "dice": 0.5949125744047619,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.5233594459582198,
+        "dice": 0.6871122207523616,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0456,
+      "cogvl_stability": 0.3774,
+      "cogvl_score": 0.1783,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2855
+    },
+    {
+      "image": "malignant (107)",
+      "SAM (single)": {
+        "iou": 0.36675075270567176,
+        "dice": 0.5366753989045011,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4845365829975239,
+        "dice": 0.6527782320044477,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5369218182164126,
+        "dice": 0.6986976329602852,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5184328567423605,
+        "dice": 0.6828525271174706,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7259390483571844,
+        "dice": 0.84121052715988,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0929,
+      "cogvl_stability": 0.5432,
+      "cogvl_score": 0.273,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4198
+    },
+    {
+      "image": "malignant (108)",
+      "SAM (single)": {
+        "iou": 0.6028208475277786,
+        "dice": 0.7521999086268201,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.694726731937043,
+        "dice": 0.8198687361743359,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6237149174480722,
+        "dice": 0.7682566819406205,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6011325591127851,
+        "dice": 0.7508841859363387,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7205601002770814,
+        "dice": 0.8375878298712628,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0514,
+      "cogvl_stability": 0.663,
+      "cogvl_score": 0.2961,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5803
+    },
+    {
+      "image": "malignant (109)",
+      "SAM (single)": {
+        "iou": 0.015558838010832103,
+        "dice": 0.030640938621157764,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.6397037037037037,
+        "dice": 0.7802674376581135,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6709306361247459,
+        "dice": 0.803062223672888,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7577519379844961,
+        "dice": 0.8621830209481808,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7664247517188694,
+        "dice": 0.8677694885933614,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.05,
+      "cogvl_stability": 0.3795,
+      "cogvl_score": 0.1818,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2381
+    },
+    {
+      "image": "malignant (11)",
+      "SAM (single)": {
+        "iou": 0.6559987262160656,
+        "dice": 0.7922696024229604,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5087586360597282,
+        "dice": 0.6744069248722266,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.677414802794045,
+        "dice": 0.8076890720955666,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6214391471720462,
+        "dice": 0.7665278690919717,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7451968503937008,
+        "dice": 0.8539974733802562,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0662,
+      "cogvl_stability": 0.5876,
+      "cogvl_score": 0.2748,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4871
+    },
+    {
+      "image": "malignant (110)",
+      "SAM (single)": {
+        "iou": 0.11736282615698486,
+        "dice": 0.2100711128195272,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8159670955494621,
+        "dice": 0.8986584586793658,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7655760716985207,
+        "dice": 0.8672252461623142,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7366495976591075,
+        "dice": 0.8483572030328559,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8291410082454859,
+        "dice": 0.9065905848787447,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0013,
+      "cogvl_stability": 0.4734,
+      "cogvl_score": 0.1902,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3639
+    },
+    {
+      "image": "malignant (111)",
+      "SAM (single)": {
+        "iou": 0.02262463278817907,
+        "dice": 0.04424816704540582,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.2784027130949822,
+        "dice": 0.4355477507099088,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6308274996276358,
+        "dice": 0.7736287250143521,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.47931844361003484,
+        "dice": 0.6480260496723566,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6708645633606415,
+        "dice": 0.8030148918968261,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1602,
+      "cogvl_stability": 0.4529,
+      "cogvl_score": 0.2773,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2834
+    },
+    {
+      "image": "malignant (112)",
+      "SAM (single)": {
+        "iou": 0.09286359530261969,
+        "dice": 0.16994544552818647,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6437233134073441,
+        "dice": 0.7832502078137988,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.644669150257229,
+        "dice": 0.7839499514615468,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.644669150257229,
+        "dice": 0.7839499514615468,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6599115696389094,
+        "dice": 0.7951165371809101,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0234,
+      "cogvl_stability": 0.5225,
+      "cogvl_score": 0.1949,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3885
+    },
+    {
+      "image": "malignant (113)",
+      "SAM (single)": {
+        "iou": 0.47783403947504394,
+        "dice": 0.6466680651702678,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5726050883262407,
+        "dice": 0.7282248958455009,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5522714341329021,
+        "dice": 0.7115655445162535,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6274936110157532,
+        "dice": 0.7711165276085122,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6274936110157532,
+        "dice": 0.7711165276085122,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0724,
+      "cogvl_stability": 0.5279,
+      "cogvl_score": 0.2546,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4473
+    },
+    {
+      "image": "malignant (114)",
+      "SAM (single)": {
+        "iou": 0.02453209262979803,
+        "dice": 0.047889359066983175,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.59218236387023,
+        "dice": 0.7438624837305328,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.46205516649992856,
+        "dice": 0.6320625610948192,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.39868058985394766,
+        "dice": 0.5700809645118168,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6750189825360668,
+        "dice": 0.8059836808703535,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1341,
+      "cogvl_stability": 0.3291,
+      "cogvl_score": 0.2121,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2306
+    },
+    {
+      "image": "malignant (115)",
+      "SAM (single)": {
+        "iou": 0.5842783380784635,
+        "dice": 0.7375955651670677,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6033492592056368,
+        "dice": 0.7526111428829425,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6199391979925687,
+        "dice": 0.7653857610962168,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.592144434841064,
+        "dice": 0.7438325592617167,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7478541281358183,
+        "dice": 0.8557397509292671,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0705,
+      "cogvl_stability": 0.7686,
+      "cogvl_score": 0.3497,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6738
+    },
+    {
+      "image": "malignant (116)",
+      "SAM (single)": {
+        "iou": 0.8072793925111286,
+        "dice": 0.8933642422486235,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8068093887026051,
+        "dice": 0.8930763740185582,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8068093887026051,
+        "dice": 0.8930763740185582,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7866911485374193,
+        "dice": 0.8806123533789291,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8264978143481615,
+        "dice": 0.9050082708619294,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0469,
+      "cogvl_stability": 0.7661,
+      "cogvl_score": 0.3346,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6518
+    },
+    {
+      "image": "malignant (117)",
+      "SAM (single)": {
+        "iou": 0.6150976909413854,
+        "dice": 0.7616848124931266,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6032966056513239,
+        "dice": 0.752570177626292,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6032966056513239,
+        "dice": 0.752570177626292,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6382183528997933,
+        "dice": 0.7791615223576145,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7055257444803998,
+        "dice": 0.8273410668395897,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0695,
+      "cogvl_stability": 0.697,
+      "cogvl_score": 0.3205,
+      "cogvl_unreliable": false,
+      "global_stability": 0.576
+    },
+    {
+      "image": "malignant (118)",
+      "SAM (single)": {
+        "iou": 0.7788745677459918,
+        "dice": 0.8756936344678896,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7871904673245206,
+        "dice": 0.8809250963642046,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8120272667849472,
+        "dice": 0.8962638495233187,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7907775097420672,
+        "dice": 0.8831666753017978,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8512924418247683,
+        "dice": 0.9196736534889891,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.132,
+      "cogvl_stability": 0.8124,
+      "cogvl_score": 0.4042,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7455
+    },
+    {
+      "image": "malignant (119)",
+      "SAM (single)": {
+        "iou": 0.05326711792918126,
+        "dice": 0.10114645567576296,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6930114853027058,
+        "dice": 0.8186731056686214,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6980846124081,
+        "dice": 0.8222023888646247,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7302175209516933,
+        "dice": 0.844075975545598,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.779984338292874,
+        "dice": 0.8763946081019252,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1021,
+      "cogvl_stability": 0.6435,
+      "cogvl_score": 0.3187,
+      "cogvl_unreliable": false,
+      "global_stability": 0.508
+    },
+    {
+      "image": "malignant (12)",
+      "SAM (single)": {
+        "iou": 0.14445610353270374,
+        "dice": 0.25244498777506114,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.800949418890162,
+        "dice": 0.8894746409743683,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.800949418890162,
+        "dice": 0.8894746409743683,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8292310303853335,
+        "dice": 0.9066443949517446,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8292310303853335,
+        "dice": 0.9066443949517446,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.001,
+      "cogvl_stability": 0.6003,
+      "cogvl_score": 0.2395,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4683
+    },
+    {
+      "image": "malignant (120)",
+      "SAM (single)": {
+        "iou": 0.8421388437236298,
+        "dice": 0.9143055058991777,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5025407031006948,
+        "dice": 0.6689212506039064,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7323847311533725,
+        "dice": 0.8455220344337387,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.856347438752784,
+        "dice": 0.9226154769046191,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8605520225529404,
+        "dice": 0.9250502131858064,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0944,
+      "cogvl_stability": 0.7402,
+      "cogvl_score": 0.3527,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6562
+    },
+    {
+      "image": "malignant (121)",
+      "SAM (single)": {
+        "iou": 0.1064648537711647,
+        "dice": 0.19244145606306515,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6164307521509853,
+        "dice": 0.7627060439560439,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6164307521509853,
+        "dice": 0.7627060439560439,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6518697874630078,
+        "dice": 0.7892508143322475,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6584269662921348,
+        "dice": 0.7940379403794038,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0049,
+      "cogvl_stability": 0.7144,
+      "cogvl_score": 0.2828,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6229
+    },
+    {
+      "image": "malignant (122)",
+      "SAM (single)": {
+        "iou": 0.5650980392156862,
+        "dice": 0.7221247807567026,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.708915520701018,
+        "dice": 0.8296671334697835,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7152337413360861,
+        "dice": 0.8339781618089588,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7169019528446007,
+        "dice": 0.8351111158756874,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7497724249002171,
+        "dice": 0.8569942173399764,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0937,
+      "cogvl_stability": 0.652,
+      "cogvl_score": 0.317,
+      "cogvl_unreliable": false,
+      "global_stability": 0.503
+    },
+    {
+      "image": "malignant (123)",
+      "SAM (single)": {
+        "iou": 0.0031202283741618535,
+        "dice": 0.006221045665122435,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.5995321503965311,
+        "dice": 0.7496343855894417,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.603658334163264,
+        "dice": 0.7528515536050676,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5305502344936918,
+        "dice": 0.6932803935954426,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6598393824316753,
+        "dice": 0.7950641362238392,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1136,
+      "cogvl_stability": 0.386,
+      "cogvl_score": 0.2226,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2685
+    },
+    {
+      "image": "malignant (124)",
+      "SAM (single)": {
+        "iou": 0.1980357182180529,
+        "dice": 0.33060069112565255,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7894014987378004,
+        "dice": 0.8823078546593648,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.43776449332476447,
+        "dice": 0.608951598620236,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7894014987378004,
+        "dice": 0.8823078546593648,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7894014987378004,
+        "dice": 0.8823078546593648,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1149,
+      "cogvl_stability": 0.4469,
+      "cogvl_score": 0.2477,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3053
+    },
+    {
+      "image": "malignant (125)",
+      "SAM (single)": {
+        "iou": 0.08833555654364902,
+        "dice": 0.16233147215034727,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5065602700836338,
+        "dice": 0.6724726254138019,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6092808804937905,
+        "dice": 0.7572088724584104,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5122489348752283,
+        "dice": 0.6774664184736127,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6431587525001852,
+        "dice": 0.7828321536450115,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0559,
+      "cogvl_stability": 0.7783,
+      "cogvl_score": 0.3449,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7023
+    },
+    {
+      "image": "malignant (126)",
+      "SAM (single)": {
+        "iou": 0.08961765948457964,
+        "dice": 0.1644937721126351,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5605053915695458,
+        "dice": 0.7183639282473652,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.46953217763001664,
+        "dice": 0.639022656022753,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.08961765948457964,
+        "dice": 0.1644937721126351,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.5605053915695458,
+        "dice": 0.7183639282473652,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0371,
+      "cogvl_stability": 0.3046,
+      "cogvl_score": 0.1441,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2263
+    },
+    {
+      "image": "malignant (127)",
+      "SAM (single)": {
+        "iou": 0.0009896272404061137,
+        "dice": 0.0019772976931526913,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.2906551847971359,
+        "dice": 0.45039943777519614,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6377442324124181,
+        "dice": 0.7788080944397682,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.39915790663501755,
+        "dice": 0.5705687753214281,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6741089108910892,
+        "dice": 0.8053345950261702,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1762,
+      "cogvl_stability": 0.5024,
+      "cogvl_score": 0.3067,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3578
+    },
+    {
+      "image": "malignant (128)",
+      "SAM (single)": {
+        "iou": 0.008300580198390417,
+        "dice": 0.016464495531198085,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.4452055140503215,
+        "dice": 0.616113777206111,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.48191889799514137,
+        "dice": 0.6503984781449509,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.46382466751211265,
+        "dice": 0.6337161516760335,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6315806707761323,
+        "dice": 0.774194843183198,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1529,
+      "cogvl_stability": 0.4696,
+      "cogvl_score": 0.2796,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3212
+    },
+    {
+      "image": "malignant (129)",
+      "SAM (single)": {
+        "iou": 0.006539964851290226,
+        "dice": 0.012994943230607766,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.5140939933712181,
+        "dice": 0.6790780435322353,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5140939933712181,
+        "dice": 0.6790780435322353,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5199095884184729,
+        "dice": 0.6841322567870103,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6144265340879768,
+        "dice": 0.7611700143854228,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.144,
+      "cogvl_stability": 0.5657,
+      "cogvl_score": 0.3127,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3896
+    },
+    {
+      "image": "malignant (13)",
+      "SAM (single)": {
+        "iou": 0.05862667327714428,
+        "dice": 0.11075986418452172,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4687892587939699,
+        "dice": 0.6383342688370353,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.1968487943591678,
+        "dice": 0.32894513540378695,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4161664541411377,
+        "dice": 0.5877366363596433,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6076419698314108,
+        "dice": 0.7559419089999655,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0557,
+      "cogvl_stability": 0.3812,
+      "cogvl_score": 0.1859,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2646
+    },
+    {
+      "image": "malignant (130)",
+      "SAM (single)": {
+        "iou": 0.03977342314758114,
+        "dice": 0.07650401955299037,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.3833589655958077,
+        "dice": 0.5542436563899326,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3833589655958077,
+        "dice": 0.5542436563899326,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6277586616041766,
+        "dice": 0.7713166287015946,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.743583415597236,
+        "dice": 0.8529370134465676,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0757,
+      "cogvl_stability": 0.3786,
+      "cogvl_score": 0.1969,
+      "cogvl_unreliable": false,
+      "global_stability": 0.286
+    },
+    {
+      "image": "malignant (131)",
+      "SAM (single)": {
+        "iou": 0.7972476403199078,
+        "dice": 0.8871872995509942,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8537999293036409,
+        "dice": 0.9211349248722447,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7968515205724508,
+        "dice": 0.88694197761937,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.847818425318954,
+        "dice": 0.9176425710471104,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8537999293036409,
+        "dice": 0.9211349248722447,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0771,
+      "cogvl_stability": 0.8704,
+      "cogvl_score": 0.3944,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8173
+    },
+    {
+      "image": "malignant (132)",
+      "SAM (single)": {
+        "iou": 0.7449669947614461,
+        "dice": 0.8538465162927512,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.32873533732888693,
+        "dice": 0.4948093545697863,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7058788843681821,
+        "dice": 0.8275838230210854,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7747472272238144,
+        "dice": 0.8730789549514936,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8068919756779394,
+        "dice": 0.8931269677869884,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1305,
+      "cogvl_stability": 0.5557,
+      "cogvl_score": 0.3006,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4403
+    },
+    {
+      "image": "malignant (133)",
+      "SAM (single)": {
+        "iou": 0.7448508130295216,
+        "dice": 0.8537701991109073,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.46051377118644066,
+        "dice": 0.630618868882482,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.46051377118644066,
+        "dice": 0.630618868882482,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.498476027297469,
+        "dice": 0.6653106465726787,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7875320733618874,
+        "dice": 0.8811389569986763,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.125,
+      "cogvl_stability": 0.513,
+      "cogvl_score": 0.2802,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4223
+    },
+    {
+      "image": "malignant (134)",
+      "SAM (single)": {
+        "iou": 0.5130541118923877,
+        "dice": 0.6781702093267599,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.541254605390731,
+        "dice": 0.7023558644984745,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.530099106815123,
+        "dice": 0.6928951261444964,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5295876037091264,
+        "dice": 0.6924580225740836,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6562803692905733,
+        "dice": 0.7924749715794492,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0498,
+      "cogvl_stability": 0.7998,
+      "cogvl_score": 0.3498,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7459
+    },
+    {
+      "image": "malignant (135)",
+      "SAM (single)": {
+        "iou": 0.7286151112040352,
+        "dice": 0.8430044449820084,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.738049813135405,
+        "dice": 0.849284994661895,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7469095470820375,
+        "dice": 0.8551210316866641,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7468755683737366,
+        "dice": 0.8550987624940505,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7627995713875023,
+        "dice": 0.8654410674573758,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1086,
+      "cogvl_stability": 0.9168,
+      "cogvl_score": 0.4319,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8792
+    },
+    {
+      "image": "malignant (136)",
+      "SAM (single)": {
+        "iou": 0.47670454545454544,
+        "dice": 0.6456329357445171,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5445783132530121,
+        "dice": 0.7051482059282371,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5594784353059178,
+        "dice": 0.7175199382557242,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6532289628180039,
+        "dice": 0.7902462121212122,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6857092324018395,
+        "dice": 0.8135557653971252,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0443,
+      "cogvl_stability": 0.5011,
+      "cogvl_score": 0.227,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3888
+    },
+    {
+      "image": "malignant (137)",
+      "SAM (single)": {
+        "iou": 0.18123845544902806,
+        "dice": 0.30686175955917944,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.44053122206614737,
+        "dice": 0.6116232891284306,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.48424362375598323,
+        "dice": 0.6525123180661818,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7219880576044959,
+        "dice": 0.8385517593064763,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7240614183012337,
+        "dice": 0.8399485199485199,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1532,
+      "cogvl_stability": 0.543,
+      "cogvl_score": 0.3091,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4469
+    },
+    {
+      "image": "malignant (138)",
+      "SAM (single)": {
+        "iou": 0.6568321597290311,
+        "dice": 0.7928771250268991,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7043859649122807,
+        "dice": 0.8265568708183222,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4741728085306571,
+        "dice": 0.6433069525997788,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5464381955444017,
+        "dice": 0.7067055083336659,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7043859649122807,
+        "dice": 0.8265568708183222,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.106,
+      "cogvl_stability": 0.6065,
+      "cogvl_score": 0.3062,
+      "cogvl_unreliable": false,
+      "global_stability": 0.483
+    },
+    {
+      "image": "malignant (139)",
+      "SAM (single)": {
+        "iou": 0.6915672536767027,
+        "dice": 0.8176645086662064,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6961357388859047,
+        "dice": 0.8208490899945977,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6706057063414326,
+        "dice": 0.8028294214438371,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6588568331024514,
+        "dice": 0.7943504465906616,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7226779404341241,
+        "dice": 0.839016885828358,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.08,
+      "cogvl_stability": 0.8235,
+      "cogvl_score": 0.3774,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7514
+    },
+    {
+      "image": "malignant (14)",
+      "SAM (single)": {
+        "iou": 0.036902999396830616,
+        "dice": 0.07117927022739291,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.48599734099583997,
+        "dice": 0.6541025715027851,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6004621115669354,
+        "dice": 0.7503609204207301,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6139888931443891,
+        "dice": 0.7608340996054934,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6421839454013649,
+        "dice": 0.7821096378389076,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1079,
+      "cogvl_stability": 0.3947,
+      "cogvl_score": 0.2226,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2612
+    },
+    {
+      "image": "malignant (140)",
+      "SAM (single)": {
+        "iou": 0.641180675522726,
+        "dice": 0.781365129489483,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7590781187190138,
+        "dice": 0.8630408287629494,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7196845707484005,
+        "dice": 0.8369960200726769,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7590781187190138,
+        "dice": 0.8630408287629494,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7724290328063913,
+        "dice": 0.8716050329906398,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0856,
+      "cogvl_stability": 0.5847,
+      "cogvl_score": 0.2852,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4701
+    },
+    {
+      "image": "malignant (141)",
+      "SAM (single)": {
+        "iou": 0.5320855614973262,
+        "dice": 0.6945898778359512,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6406146118046835,
+        "dice": 0.780944662073934,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6511425462459195,
+        "dice": 0.7887175431659418,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6465303140978816,
+        "dice": 0.7853245197639857,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7049376161401646,
+        "dice": 0.8269365511872324,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0517,
+      "cogvl_stability": 0.7695,
+      "cogvl_score": 0.3388,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7089
+    },
+    {
+      "image": "malignant (142)",
+      "SAM (single)": {
+        "iou": 0.6303598090551595,
+        "dice": 0.7732769239698949,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6274678354839319,
+        "dice": 0.7710970647814402,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6274678354839319,
+        "dice": 0.7710970647814402,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6154112446519555,
+        "dice": 0.7619251713015622,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6777288998145513,
+        "dice": 0.8079122912998213,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1327,
+      "cogvl_stability": 0.7503,
+      "cogvl_score": 0.3798,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6649
+    },
+    {
+      "image": "malignant (143)",
+      "SAM (single)": {
+        "iou": 0.552633714795877,
+        "dice": 0.7118661787767904,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5540134729323919,
+        "dice": 0.7130098709980676,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5645645645645646,
+        "dice": 0.7216890595009597,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5600194789383979,
+        "dice": 0.717964726080849,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.5818609174906793,
+        "dice": 0.7356663421632423,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0194,
+      "cogvl_stability": 0.9778,
+      "cogvl_score": 0.3795,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9686
+    },
+    {
+      "image": "malignant (144)",
+      "SAM (single)": {
+        "iou": 0.7909880078754251,
+        "dice": 0.8832979387882574,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6420241470776548,
+        "dice": 0.7819911153198067,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7848320563944023,
+        "dice": 0.8794463922615412,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8029436772510042,
+        "dice": 0.8907030068463077,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8172223448884963,
+        "dice": 0.8994192121698136,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0809,
+      "cogvl_stability": 0.7068,
+      "cogvl_score": 0.3313,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5622
+    },
+    {
+      "image": "malignant (145)",
+      "SAM (single)": {
+        "iou": 0.6339980544747081,
+        "dice": 0.7760083345735973,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6186770428015564,
+        "dice": 0.7644230769230769,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6186770428015564,
+        "dice": 0.7644230769230769,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6448484848484849,
+        "dice": 0.7840825350036846,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7091848719755697,
+        "dice": 0.8298515667949423,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0054,
+      "cogvl_stability": 0.8444,
+      "cogvl_score": 0.341,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7856
+    },
+    {
+      "image": "malignant (146)",
+      "SAM (single)": {
+        "iou": 0.7767251365215952,
+        "dice": 0.8743334808019186,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.783101387539031,
+        "dice": 0.87835878880655,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7827651084417061,
+        "dice": 0.8781472160692126,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.79795185200479,
+        "dice": 0.8876231597804368,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8107584101643875,
+        "dice": 0.8954904261256849,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1041,
+      "cogvl_stability": 0.8654,
+      "cogvl_score": 0.4086,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7945
+    },
+    {
+      "image": "malignant (147)",
+      "SAM (single)": {
+        "iou": 0.33958039638444315,
+        "dice": 0.5069951714745574,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5154963680387409,
+        "dice": 0.680300367470842,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.591824801998618,
+        "dice": 0.7435803252412596,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6607747273411056,
+        "dice": 0.7957427536231884,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7021662071681765,
+        "dice": 0.8250266092831691,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0601,
+      "cogvl_stability": 0.4943,
+      "cogvl_score": 0.2338,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4419
+    },
+    {
+      "image": "malignant (148)",
+      "SAM (single)": {
+        "iou": 0.6399580125962211,
+        "dice": 0.7804565820354171,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6385584324702589,
+        "dice": 0.7794149049754431,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.65232598810773,
+        "dice": 0.7895850973751058,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6568730325288562,
+        "dice": 0.7929069031032299,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6743535988819007,
+        "dice": 0.8055091819699499,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0249,
+      "cogvl_stability": 0.9701,
+      "cogvl_score": 0.403,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9555
+    },
+    {
+      "image": "malignant (149)",
+      "SAM (single)": {
+        "iou": 0.6235643910686177,
+        "dice": 0.7681424826744228,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6114382323791756,
+        "dice": 0.758872689121233,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6553181566444166,
+        "dice": 0.7917730546408636,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7336791792958731,
+        "dice": 0.8463840231314931,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8557906141301249,
+        "dice": 0.9222922107850668,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0387,
+      "cogvl_stability": 0.8402,
+      "cogvl_score": 0.3593,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8043
+    },
+    {
+      "image": "malignant (15)",
+      "SAM (single)": {
+        "iou": 0.19492627449251726,
+        "dice": 0.3262565710596698,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.31116906861690685,
+        "dice": 0.4746436993745514,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.34492719214941436,
+        "dice": 0.512930654035129,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.22273210527457746,
+        "dice": 0.36431873231064066,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.612881343157022,
+        "dice": 0.7599831763908685,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1674,
+      "cogvl_stability": 0.4946,
+      "cogvl_score": 0.2983,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3406
+    },
+    {
+      "image": "malignant (150)",
+      "SAM (single)": {
+        "iou": 0.7961406756963231,
+        "dice": 0.886501471147495,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6606421719354427,
+        "dice": 0.7956466276723281,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6719746396844705,
+        "dice": 0.8038096077955863,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6566137110546634,
+        "dice": 0.7927179482736963,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8170806876106801,
+        "dice": 0.899333412304412,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1304,
+      "cogvl_stability": 0.6429,
+      "cogvl_score": 0.3354,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5851
+    },
+    {
+      "image": "malignant (151)",
+      "SAM (single)": {
+        "iou": 0.35032512114025033,
+        "dice": 0.5188752185020842,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3318947326511924,
+        "dice": 0.49837982614518195,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.46096685819574756,
+        "dice": 0.6310435525758996,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4237508792927861,
+        "dice": 0.5952598666745325,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.5889821103564611,
+        "dice": 0.7413325883503282,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1125,
+      "cogvl_stability": 0.6216,
+      "cogvl_score": 0.3161,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5152
+    },
+    {
+      "image": "malignant (152)",
+      "SAM (single)": {
+        "iou": 0.4069090626879572,
+        "dice": 0.5784440138732788,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3084606725581275,
+        "dice": 0.4714863488484777,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3789851570590266,
+        "dice": 0.5496580657434942,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.545428184805722,
+        "dice": 0.7058602789417725,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6182063578236217,
+        "dice": 0.7640636867291357,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0998,
+      "cogvl_stability": 0.4722,
+      "cogvl_score": 0.2488,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3663
+    },
+    {
+      "image": "malignant (153)",
+      "SAM (single)": {
+        "iou": 0.4134294290132146,
+        "dice": 0.5850018692505224,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.358091792128332,
+        "dice": 0.5273454919672975,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3681126439293204,
+        "dice": 0.5381320691139492,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.40381870510330625,
+        "dice": 0.5753146095507959,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6419068496311626,
+        "dice": 0.7819041010461225,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1799,
+      "cogvl_stability": 0.5245,
+      "cogvl_score": 0.3178,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4353
+    },
+    {
+      "image": "malignant (154)",
+      "SAM (single)": {
+        "iou": 0.732087013299426,
+        "dice": 0.8453235982699099,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7357141629573616,
+        "dice": 0.8477365440215454,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7312347419454664,
+        "dice": 0.8447551614216626,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.734230911102914,
+        "dice": 0.846751036903116,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7496951271877845,
+        "dice": 0.8569437218388323,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1211,
+      "cogvl_stability": 0.7668,
+      "cogvl_score": 0.3794,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6542
+    },
+    {
+      "image": "malignant (155)",
+      "SAM (single)": {
+        "iou": 0.6475422310150662,
+        "dice": 0.7860705708479586,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6906981976351774,
+        "dice": 0.8170567622314551,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6475422310150662,
+        "dice": 0.7860705708479586,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6906981976351774,
+        "dice": 0.8170567622314551,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7417859670753705,
+        "dice": 0.8517532935701645,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1079,
+      "cogvl_stability": 0.763,
+      "cogvl_score": 0.37,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6592
+    },
+    {
+      "image": "malignant (156)",
+      "SAM (single)": {
+        "iou": 0.01229897324550105,
+        "dice": 0.024299092601209864,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.4281935590369212,
+        "dice": 0.5996295898794929,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4285315323465667,
+        "dice": 0.5999609006076927,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6111155369417763,
+        "dice": 0.7586240997983266,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8238021131951839,
+        "dice": 0.9033898000610775,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1154,
+      "cogvl_stability": 0.4743,
+      "cogvl_score": 0.2589,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3568
+    },
+    {
+      "image": "malignant (157)",
+      "SAM (single)": {
+        "iou": 0.48564412542500945,
+        "dice": 0.6537825810553083,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.620754716981132,
+        "dice": 0.7660069848661234,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6387424698795181,
+        "dice": 0.7795519816197588,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6855854162751363,
+        "dice": 0.813468614115286,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6855854162751363,
+        "dice": 0.813468614115286,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0457,
+      "cogvl_stability": 0.6743,
+      "cogvl_score": 0.2971,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5507
+    },
+    {
+      "image": "malignant (158)",
+      "SAM (single)": {
+        "iou": 0.4879871280918487,
+        "dice": 0.6559023514102964,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4226988382484361,
+        "dice": 0.5942211055276382,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6987010687968843,
+        "dice": 0.8226298100721674,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6564214931501441,
+        "dice": 0.7925778503414331,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6987010687968843,
+        "dice": 0.8226298100721674,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1226,
+      "cogvl_stability": 0.5166,
+      "cogvl_score": 0.2802,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3916
+    },
+    {
+      "image": "malignant (159)",
+      "SAM (single)": {
+        "iou": 0.8629690874730022,
+        "dice": 0.926444881212242,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.612963696062222,
+        "dice": 0.7600464877897366,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6010508979687867,
+        "dice": 0.7508204751408278,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8730342040012228,
+        "dice": 0.9322138401276657,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8730342040012228,
+        "dice": 0.9322138401276657,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0784,
+      "cogvl_stability": 0.6648,
+      "cogvl_score": 0.313,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5711
+    },
+    {
+      "image": "malignant (16)",
+      "SAM (single)": {
+        "iou": 0.552406766987569,
+        "dice": 0.7116778652794836,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.21916820437485443,
+        "dice": 0.3595372707201399,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.21916820437485443,
+        "dice": 0.3595372707201399,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5157053210693716,
+        "dice": 0.6804822994294529,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6917478482161672,
+        "dice": 0.8177907232990639,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1328,
+      "cogvl_stability": 0.4376,
+      "cogvl_score": 0.2547,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3838
+    },
+    {
+      "image": "malignant (160)",
+      "SAM (single)": {
+        "iou": 0.7278439893067493,
+        "dice": 0.8424880878264676,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.42249668584179617,
+        "dice": 0.5940213289028139,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4354170048574604,
+        "dice": 0.6066766707988082,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4354170048574604,
+        "dice": 0.6066766707988082,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7278439893067493,
+        "dice": 0.8424880878264676,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0908,
+      "cogvl_stability": 0.6222,
+      "cogvl_score": 0.3034,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5812
+    },
+    {
+      "image": "malignant (161)",
+      "SAM (single)": {
+        "iou": 0.09369017783655313,
+        "dice": 0.1713285530677129,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.39752551725387686,
+        "dice": 0.5688991182572614,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.39752551725387686,
+        "dice": 0.5688991182572614,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5721693301598096,
+        "dice": 0.7278723979453906,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7004472122008661,
+        "dice": 0.8238388197823403,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1049,
+      "cogvl_stability": 0.4249,
+      "cogvl_score": 0.2329,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3083
+    },
+    {
+      "image": "malignant (162)",
+      "SAM (single)": {
+        "iou": 0.03882181406228693,
+        "dice": 0.07474200779530263,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.4201873062405147,
+        "dice": 0.5917350540934271,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7694148165871227,
+        "dice": 0.8696828006348257,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.39094524841917655,
+        "dice": 0.5621288815839298,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8569048129871988,
+        "dice": 0.9229388679419682,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1407,
+      "cogvl_stability": 0.4963,
+      "cogvl_score": 0.283,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3857
+    },
+    {
+      "image": "malignant (163)",
+      "SAM (single)": {
+        "iou": 0.008318363829158818,
+        "dice": 0.016499478989094787,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.5035826013716761,
+        "dice": 0.6698436133967922,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5046010929291164,
+        "dice": 0.6707440201931167,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8699283534939746,
+        "dice": 0.9304403046977786,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8963430630126445,
+        "dice": 0.9453385102046463,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1127,
+      "cogvl_stability": 0.565,
+      "cogvl_score": 0.2936,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4004
+    },
+    {
+      "image": "malignant (164)",
+      "SAM (single)": {
+        "iou": 0.05376082729361852,
+        "dice": 0.10203610895594371,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5680494679944863,
+        "dice": 0.7245300350390269,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5693746288180791,
+        "dice": 0.7256070263438427,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.568034507058614,
+        "dice": 0.7245178655209028,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7721917061512014,
+        "dice": 0.871453921684609,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1904,
+      "cogvl_stability": 0.6365,
+      "cogvl_score": 0.3689,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4823
+    },
+    {
+      "image": "malignant (165)",
+      "SAM (single)": {
+        "iou": 0.5481491789590871,
+        "dice": 0.7081348314606741,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.52257454443988,
+        "dice": 0.6864354147364563,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5576156390159924,
+        "dice": 0.7159861843301218,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5725806451612904,
+        "dice": 0.7282051282051282,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7723248065205559,
+        "dice": 0.871538674715941,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0604,
+      "cogvl_stability": 0.5425,
+      "cogvl_score": 0.2533,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4361
+    },
+    {
+      "image": "malignant (166)",
+      "SAM (single)": {
+        "iou": 0.5844410097887687,
+        "dice": 0.7377251739611107,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.601716562787371,
+        "dice": 0.7513396274559837,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5553380049464138,
+        "dice": 0.7141058768965746,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6149862930246726,
+        "dice": 0.7615993964541682,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6282467532467533,
+        "dice": 0.7716849451645065,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0513,
+      "cogvl_stability": 0.895,
+      "cogvl_score": 0.3888,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8648
+    },
+    {
+      "image": "malignant (167)",
+      "SAM (single)": {
+        "iou": 0.8622538388132212,
+        "dice": 0.9260325535027158,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8673699552347572,
+        "dice": 0.9289749498253178,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8713185555208659,
+        "dice": 0.9312348802936351,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.841015143893004,
+        "dice": 0.9136428308944775,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8975553370253437,
+        "dice": 0.9460122922500637,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0503,
+      "cogvl_stability": 0.7935,
+      "cogvl_score": 0.3476,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6776
+    },
+    {
+      "image": "malignant (168)",
+      "SAM (single)": {
+        "iou": 0.621700040086281,
+        "dice": 0.7667263053816094,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5360927717007333,
+        "dice": 0.6979953054621583,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4290946902986473,
+        "dice": 0.6005126087327027,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5528695508768072,
+        "dice": 0.7120618091386192,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7750294688010951,
+        "dice": 0.8732581429474203,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0907,
+      "cogvl_stability": 0.6205,
+      "cogvl_score": 0.3026,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5781
+    },
+    {
+      "image": "malignant (169)",
+      "SAM (single)": {
+        "iou": 0.7603186097031137,
+        "dice": 0.8638420403126286,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7710843373493976,
+        "dice": 0.8707482993197279,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8017832647462277,
+        "dice": 0.8899885801294252,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7649964714184898,
+        "dice": 0.8668532586965214,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8171428571428572,
+        "dice": 0.89937106918239,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0378,
+      "cogvl_stability": 0.8173,
+      "cogvl_score": 0.3042,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7326
+    },
+    {
+      "image": "malignant (17)",
+      "SAM (single)": {
+        "iou": 0.8545632698768197,
+        "dice": 0.9215789870933655,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8733059490876576,
+        "dice": 0.9323687350835322,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8709019257106124,
+        "dice": 0.9309968777543733,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8661316032327526,
+        "dice": 0.928264225022853,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.888281033046376,
+        "dice": 0.9408356251011074,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0766,
+      "cogvl_stability": 0.9444,
+      "cogvl_score": 0.4237,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9133
+    },
+    {
+      "image": "malignant (170)",
+      "SAM (single)": {
+        "iou": 0.7224251366648928,
+        "dice": 0.8388464860234383,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.32305960780918574,
+        "dice": 0.48835230990708023,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.32311203809373895,
+        "dice": 0.48841221119756345,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.48430001756543123,
+        "dice": 0.652563513890927,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8147968537465256,
+        "dice": 0.8979482767610407,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.148,
+      "cogvl_stability": 0.4319,
+      "cogvl_score": 0.2616,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3836
+    },
+    {
+      "image": "malignant (171)",
+      "SAM (single)": {
+        "iou": 0.6944560357675111,
+        "dice": 0.8196802054565604,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7328560775540641,
+        "dice": 0.8458360588012531,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6944560357675111,
+        "dice": 0.8196802054565604,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7608301370677608,
+        "dice": 0.8641720982067475,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7976863753213368,
+        "dice": 0.8874588874588875,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0561,
+      "cogvl_stability": 0.7965,
+      "cogvl_score": 0.3523,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7232
+    },
+    {
+      "image": "malignant (172)",
+      "SAM (single)": {
+        "iou": 0.6929575958504893,
+        "dice": 0.8186355022109918,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6863843484804147,
+        "dice": 0.8140307387208726,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7968065790878992,
+        "dice": 0.8869141379617796,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7968065790878992,
+        "dice": 0.8869141379617796,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8413581530782029,
+        "dice": 0.9138451980910965,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0821,
+      "cogvl_stability": 0.8157,
+      "cogvl_score": 0.3756,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7533
+    },
+    {
+      "image": "malignant (173)",
+      "SAM (single)": {
+        "iou": 0.6946282085207727,
+        "dice": 0.8198001249219238,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7088582416125182,
+        "dice": 0.8296279051720793,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7088582416125182,
+        "dice": 0.8296279051720793,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7677391465448034,
+        "dice": 0.8686113537117904,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8090978788653207,
+        "dice": 0.8944766209916655,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0188,
+      "cogvl_stability": 0.7929,
+      "cogvl_score": 0.3285,
+      "cogvl_unreliable": false,
+      "global_stability": 0.748
+    },
+    {
+      "image": "malignant (174)",
+      "SAM (single)": {
+        "iou": 0.6376494359319751,
+        "dice": 0.7787374048940983,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6388589519062373,
+        "dice": 0.7796387250570271,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.681046937472701,
+        "dice": 0.810265224951532,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7291353320632374,
+        "dice": 0.8433525341168284,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.735734331150608,
+        "dice": 0.8477499326327136,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.072,
+      "cogvl_stability": 0.7667,
+      "cogvl_score": 0.3499,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6585
+    },
+    {
+      "image": "malignant (175)",
+      "SAM (single)": {
+        "iou": 0.7481049271893078,
+        "dice": 0.855903916925798,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7887769686245151,
+        "dice": 0.8819176257966327,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5163833672824331,
+        "dice": 0.6810723177580916,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7437808813869135,
+        "dice": 0.8530669068872329,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8161674548957786,
+        "dice": 0.8987799585282346,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1303,
+      "cogvl_stability": 0.5596,
+      "cogvl_score": 0.302,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4571
+    },
+    {
+      "image": "malignant (176)",
+      "SAM (single)": {
+        "iou": 0.030190614066835566,
+        "dice": 0.058611704775009515,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.029742021169557695,
+        "dice": 0.057765965762526385,
+        "hallucination": true
+      },
+      "Random-5": {
+        "iou": 0.025965748489719005,
+        "dice": 0.050617183912702916,
+        "hallucination": true
+      },
+      "CogVL (ours)": {
+        "iou": 0.6057364933317833,
+        "dice": 0.7544656247737451,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6888445582934736,
+        "dice": 0.8157583892617449,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0602,
+      "cogvl_stability": 0.3422,
+      "cogvl_score": 0.173,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3289
+    },
+    {
+      "image": "malignant (177)",
+      "SAM (single)": {
+        "iou": 0.5008292822419217,
+        "dice": 0.6674033991311638,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7976426410764577,
+        "dice": 0.8874318208193107,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7586641461877757,
+        "dice": 0.8627731995700466,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8201804137633014,
+        "dice": 0.9012078226548358,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8243002750364019,
+        "dice": 0.9036892515076268,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0238,
+      "cogvl_stability": 0.6362,
+      "cogvl_score": 0.2688,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5339
+    },
+    {
+      "image": "malignant (178)",
+      "SAM (single)": {
+        "iou": 0.4652617150689626,
+        "dice": 0.6350561272217026,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5781718387164873,
+        "dice": 0.7327108804408893,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5781718387164873,
+        "dice": 0.7327108804408893,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4749153849449467,
+        "dice": 0.6439900075524313,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6834089316664823,
+        "dice": 0.8119345440206795,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0155,
+      "cogvl_stability": 0.6993,
+      "cogvl_score": 0.289,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5829
+    },
+    {
+      "image": "malignant (179)",
+      "SAM (single)": {
+        "iou": 0.5494883720930233,
+        "dice": 0.7092513657921594,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.561504086552596,
+        "dice": 0.7191836273605332,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6790470939848533,
+        "dice": 0.8088481811112072,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6605818248420281,
+        "dice": 0.7956028603466976,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7470717172409069,
+        "dice": 0.8552273039148419,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1295,
+      "cogvl_stability": 0.6283,
+      "cogvl_score": 0.329,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5225
+    },
+    {
+      "image": "malignant (18)",
+      "SAM (single)": {
+        "iou": 0.6183065026020135,
+        "dice": 0.764140169501713,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5185656308680114,
+        "dice": 0.6829676904666933,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4150450324326847,
+        "dice": 0.5866174191207993,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6657582167263261,
+        "dice": 0.7993455593270006,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7452038088090436,
+        "dice": 0.854002042681288,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.062,
+      "cogvl_stability": 0.4909,
+      "cogvl_score": 0.2336,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3899
+    },
+    {
+      "image": "malignant (180)",
+      "SAM (single)": {
+        "iou": 0.849378266354298,
+        "dice": 0.9185554754341174,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8594115740574021,
+        "dice": 0.9243909052174923,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8768741967728116,
+        "dice": 0.9343984783642416,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8605379712649887,
+        "dice": 0.9250420948731347,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8983164983164983,
+        "dice": 0.9464349059950337,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.001,
+      "cogvl_stability": 0.8547,
+      "cogvl_score": 0.3413,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7597
+    },
+    {
+      "image": "malignant (181)",
+      "SAM (single)": {
+        "iou": 0.5817085427135679,
+        "dice": 0.7355445418731732,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.48113406408094433,
+        "dice": 0.649683341635238,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5910110918766429,
+        "dice": 0.7429377392706025,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5910110918766429,
+        "dice": 0.7429377392706025,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7517725203373387,
+        "dice": 0.8582992501704159,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0751,
+      "cogvl_stability": 0.6456,
+      "cogvl_score": 0.3033,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5629
+    },
+    {
+      "image": "malignant (182)",
+      "SAM (single)": {
+        "iou": 0.7446862996158771,
+        "dice": 0.8536621165419052,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7303647427104217,
+        "dice": 0.8441743231157005,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.700872977640963,
+        "dice": 0.82413323846563,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7303074978938501,
+        "dice": 0.8441360842310267,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7534204961033801,
+        "dice": 0.859372292929966,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1114,
+      "cogvl_stability": 0.6993,
+      "cogvl_score": 0.3465,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5626
+    },
+    {
+      "image": "malignant (183)",
+      "SAM (single)": {
+        "iou": 0.7143901458386637,
+        "dice": 0.8334044004775712,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7251178771153917,
+        "dice": 0.840658933206208,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7251178771153917,
+        "dice": 0.840658933206208,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7472404970760234,
+        "dice": 0.8553378866006338,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7726958464074881,
+        "dice": 0.8717748709948397,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1216,
+      "cogvl_stability": 0.7559,
+      "cogvl_score": 0.3753,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6168
+    },
+    {
+      "image": "malignant (184)",
+      "SAM (single)": {
+        "iou": 0.29972073539678845,
+        "dice": 0.4612078998728715,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6542154661761922,
+        "dice": 0.7909676575427581,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.016453040737201666,
+        "dice": 0.03237343994813334,
+        "hallucination": true
+      },
+      "CogVL (ours)": {
+        "iou": 0.60842690126172,
+        "dice": 0.7565490241234383,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7467841888255191,
+        "dice": 0.8550388692579506,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.111,
+      "cogvl_stability": 0.3821,
+      "cogvl_score": 0.2194,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3257
+    },
+    {
+      "image": "malignant (185)",
+      "SAM (single)": {
+        "iou": 0.7712882096069869,
+        "dice": 0.8708782742681048,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.775851895559817,
+        "dice": 0.8737799559745816,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8429071443277744,
+        "dice": 0.9147581275835103,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8491118600167767,
+        "dice": 0.9183996689189727,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8588547625333686,
+        "dice": 0.9240687113853535,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1279,
+      "cogvl_stability": 0.8607,
+      "cogvl_score": 0.421,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8141
+    },
+    {
+      "image": "malignant (186)",
+      "SAM (single)": {
+        "iou": 0.005921763561703047,
+        "dice": 0.011773805431419732,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.6350981233662362,
+        "dice": 0.7768318173575253,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5781210293885344,
+        "dice": 0.7326700786853283,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7206832117847684,
+        "dice": 0.837670998181291,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.780814547211455,
+        "dice": 0.876918428630447,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0934,
+      "cogvl_stability": 0.6438,
+      "cogvl_score": 0.3136,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5483
+    },
+    {
+      "image": "malignant (187)",
+      "SAM (single)": {
+        "iou": 0.23395851010913774,
+        "dice": 0.3791999620610343,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6815535301319549,
+        "dice": 0.8106236499987866,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5457290001775883,
+        "dice": 0.7061121323529411,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6886308122102123,
+        "dice": 0.8156084885231702,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7222111126981859,
+        "dice": 0.8387021862455628,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0902,
+      "cogvl_stability": 0.3194,
+      "cogvl_score": 0.1819,
+      "cogvl_unreliable": false,
+      "global_stability": 0.218
+    },
+    {
+      "image": "malignant (188)",
+      "SAM (single)": {
+        "iou": 0.6009151103191888,
+        "dice": 0.7507145212707486,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6106687197536296,
+        "dice": 0.7582797284931918,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6778249630723782,
+        "dice": 0.8079805438478722,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6649414846423592,
+        "dice": 0.7987565818689336,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6778249630723782,
+        "dice": 0.8079805438478722,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0878,
+      "cogvl_stability": 0.6628,
+      "cogvl_score": 0.3178,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5623
+    },
+    {
+      "image": "malignant (189)",
+      "SAM (single)": {
+        "iou": 0.6668891855807744,
+        "dice": 0.8001601922306768,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.47491708126036486,
+        "dice": 0.6439915671117358,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.47471067295327907,
+        "dice": 0.6438017729981107,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6910910264686895,
+        "dice": 0.817331551822867,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7051363348129359,
+        "dice": 0.8270732614354779,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0249,
+      "cogvl_stability": 0.7756,
+      "cogvl_score": 0.2953,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7051
+    },
+    {
+      "image": "malignant (19)",
+      "SAM (single)": {
+        "iou": 0.8167954453029687,
+        "dice": 0.8991606043648573,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.44170279446330635,
+        "dice": 0.6127515270964516,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5300068893368376,
+        "dice": 0.6928163435480509,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8050591259640103,
+        "dice": 0.8920030534003258,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8220295974503157,
+        "dice": 0.9023229903626538,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1251,
+      "cogvl_stability": 0.7241,
+      "cogvl_score": 0.3647,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6402
+    },
+    {
+      "image": "malignant (190)",
+      "SAM (single)": {
+        "iou": 0.784114502805142,
+        "dice": 0.87899571644341,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8226984685794755,
+        "dice": 0.9027258021680871,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8001501634131261,
+        "dice": 0.888981574621556,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8219816965857093,
+        "dice": 0.9022941318522096,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8515628424882732,
+        "dice": 0.919831423430249,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0815,
+      "cogvl_stability": 0.9573,
+      "cogvl_score": 0.4318,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9425
+    },
+    {
+      "image": "malignant (191)",
+      "SAM (single)": {
+        "iou": 0.5397185655923741,
+        "dice": 0.7010613207547169,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6776853309347125,
+        "dice": 0.80788133321419,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6776853309347125,
+        "dice": 0.80788133321419,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7768303440164658,
+        "dice": 0.8744001323845771,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7768303440164658,
+        "dice": 0.8744001323845771,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0076,
+      "cogvl_stability": 0.7488,
+      "cogvl_score": 0.3041,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7226
+    },
+    {
+      "image": "malignant (192)",
+      "SAM (single)": {
+        "iou": 0.7567523592580541,
+        "dice": 0.861535611744003,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7785864467087175,
+        "dice": 0.8755115031372193,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.748562982427328,
+        "dice": 0.8562036254343947,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7785864467087175,
+        "dice": 0.8755115031372193,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.812137797810689,
+        "dice": 0.8963311717153771,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0338,
+      "cogvl_stability": 0.9645,
+      "cogvl_score": 0.3655,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9506
+    },
+    {
+      "image": "malignant (193)",
+      "SAM (single)": {
+        "iou": 0.6687844133841593,
+        "dice": 0.801522842639594,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6572397504996064,
+        "dice": 0.7931740115471754,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6101859141282626,
+        "dice": 0.7579074053179886,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6984251493392868,
+        "dice": 0.822438539150206,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7200988666505908,
+        "dice": 0.8372761364034627,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0056,
+      "cogvl_stability": 0.9065,
+      "cogvl_score": 0.366,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8628
+    },
+    {
+      "image": "malignant (194)",
+      "SAM (single)": {
+        "iou": 0.7643031433902684,
+        "dice": 0.8664079597133071,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "Random-5": {
+        "iou": 0.7547773035915937,
+        "dice": 0.8602542351633473,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8287804744124753,
+        "dice": 0.9063750253334635,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8570550920105154,
+        "dice": 0.9230260272813301,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.146,
+      "cogvl_stability": 0.6912,
+      "cogvl_score": 0.3641,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5729
+    },
+    {
+      "image": "malignant (195)",
+      "SAM (single)": {
+        "iou": 0.7449535206310428,
+        "dice": 0.8538376659587342,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7166764366620653,
+        "dice": 0.8349580868664838,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7277146099655254,
+        "dice": 0.8424014079270258,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7746009399391317,
+        "dice": 0.8729860584495129,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7996483572351558,
+        "dice": 0.8886717830406328,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0985,
+      "cogvl_stability": 0.6669,
+      "cogvl_score": 0.3259,
+      "cogvl_unreliable": false,
+      "global_stability": 0.515
+    },
+    {
+      "image": "malignant (196)",
+      "SAM (single)": {
+        "iou": 0.7422917962035039,
+        "dice": 0.8520866571500546,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7624142867907467,
+        "dice": 0.8651930394629954,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7496798975672215,
+        "dice": 0.8569337724112697,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7647546231780348,
+        "dice": 0.8666979682431278,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7930718475073314,
+        "dice": 0.8845957272820199,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1207,
+      "cogvl_stability": 0.8575,
+      "cogvl_score": 0.4154,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7837
+    },
+    {
+      "image": "malignant (197)",
+      "SAM (single)": {
+        "iou": 0.7755565506653019,
+        "dice": 0.8735926212822683,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7890730997054833,
+        "dice": 0.8821026931044688,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7680071729817687,
+        "dice": 0.8687828700225394,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7755565506653019,
+        "dice": 0.8735926212822683,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8074538236934484,
+        "dice": 0.8934710398780245,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0198,
+      "cogvl_stability": 0.8003,
+      "cogvl_score": 0.332,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7324
+    },
+    {
+      "image": "malignant (198)",
+      "SAM (single)": {
+        "iou": 0.4522131670083909,
+        "dice": 0.6227917185738863,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4096988873344403,
+        "dice": 0.5812573039752175,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.507892703388895,
+        "dice": 0.6736456808199122,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4978182573763679,
+        "dice": 0.6647245150401146,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6594141108513272,
+        "dice": 0.7947553374883968,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.08,
+      "cogvl_stability": 0.4763,
+      "cogvl_score": 0.2385,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3305
+    },
+    {
+      "image": "malignant (199)",
+      "SAM (single)": {
+        "iou": 0.6563371552525565,
+        "dice": 0.7925163704396633,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5711614272718083,
+        "dice": 0.7270563257953485,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3961752433936022,
+        "dice": 0.5675150669920805,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6951471661396253,
+        "dice": 0.8201614349775784,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7363485934914507,
+        "dice": 0.8481575603557815,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0319,
+      "cogvl_stability": 0.6844,
+      "cogvl_score": 0.2929,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5855
+    },
+    {
+      "image": "malignant (2)",
+      "SAM (single)": {
+        "iou": 0.008870098648760674,
+        "dice": 0.017584223500410848,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.34458866701757923,
+        "dice": 0.512556256750116,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.34458866701757923,
+        "dice": 0.512556256750116,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5519990117099368,
+        "dice": 0.7113393855860309,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7365667597648923,
+        "dice": 0.8483022672443798,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1574,
+      "cogvl_stability": 0.492,
+      "cogvl_score": 0.2913,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3457
+    },
+    {
+      "image": "malignant (20)",
+      "SAM (single)": {
+        "iou": 0.7691288824048835,
+        "dice": 0.8695001139310554,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.856661838565866,
+        "dice": 0.922797916962169,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6818684554503799,
+        "dice": 0.8108463575027757,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8188046387154326,
+        "dice": 0.9003766773915091,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.856661838565866,
+        "dice": 0.922797916962169,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1001,
+      "cogvl_stability": 0.7543,
+      "cogvl_score": 0.3618,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6687
+    },
+    {
+      "image": "malignant (200)",
+      "SAM (single)": {
+        "iou": 0.6049448867115738,
+        "dice": 0.7538512901225736,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6386040104086943,
+        "dice": 0.7794488556749183,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6312366085093358,
+        "dice": 0.7739362949758409,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6312366085093358,
+        "dice": 0.7739362949758409,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6433984261148353,
+        "dice": 0.78300966569123,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0016,
+      "cogvl_stability": 0.7031,
+      "cogvl_score": 0.2822,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5871
+    },
+    {
+      "image": "malignant (201)",
+      "SAM (single)": {
+        "iou": 0.7214356529391451,
+        "dice": 0.838179053288899,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6901304747983326,
+        "dice": 0.8166594059913385,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6901304747983326,
+        "dice": 0.8166594059913385,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6853376232659201,
+        "dice": 0.8132941599414878,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8158832026641084,
+        "dice": 0.8986075772572977,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1556,
+      "cogvl_stability": 0.7491,
+      "cogvl_score": 0.393,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6967
+    },
+    {
+      "image": "malignant (202)",
+      "SAM (single)": {
+        "iou": 0.6690992266637621,
+        "dice": 0.8017488906290786,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6989317636799651,
+        "dice": 0.82278968304889,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6210316571889133,
+        "dice": 0.7662178026379394,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7395768259228074,
+        "dice": 0.85029510039659,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7770088128564023,
+        "dice": 0.8745131788147089,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1008,
+      "cogvl_stability": 0.7845,
+      "cogvl_score": 0.3742,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6991
+    },
+    {
+      "image": "malignant (203)",
+      "SAM (single)": {
+        "iou": 0.37382405097532384,
+        "dice": 0.5442095015150354,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6758198236257063,
+        "dice": 0.80655427761147,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6758198236257063,
+        "dice": 0.80655427761147,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5800808943150102,
+        "dice": 0.7342420206485496,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6764237691256063,
+        "dice": 0.8069842262835695,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1221,
+      "cogvl_stability": 0.7061,
+      "cogvl_score": 0.3557,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5818
+    },
+    {
+      "image": "malignant (204)",
+      "SAM (single)": {
+        "iou": 0.4737911165461065,
+        "dice": 0.6429555874328468,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.45745237049584875,
+        "dice": 0.627742463158801,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.45745237049584875,
+        "dice": 0.627742463158801,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.47579720119293417,
+        "dice": 0.6448002487175502,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7266671600917771,
+        "dice": 0.841699172703502,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0132,
+      "cogvl_stability": 0.7484,
+      "cogvl_score": 0.3073,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6386
+    },
+    {
+      "image": "malignant (205)",
+      "SAM (single)": {
+        "iou": 0.5992929111612334,
+        "dice": 0.7494473426085428,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3698982496236543,
+        "dice": 0.5400375534829316,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5272297351811281,
+        "dice": 0.690439326888301,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6130874685397391,
+        "dice": 0.7601416296349282,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8507315292880068,
+        "dice": 0.9193462323682257,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1635,
+      "cogvl_stability": 0.5983,
+      "cogvl_score": 0.3374,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5084
+    },
+    {
+      "image": "malignant (206)",
+      "SAM (single)": {
+        "iou": 0.8234567138355064,
+        "dice": 0.9031820800433766,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8087041403441235,
+        "dice": 0.8942359585578874,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8326588009329126,
+        "dice": 0.9086893867085883,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8237010891211493,
+        "dice": 0.9033290532475308,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8487214179407387,
+        "dice": 0.9181712395436149,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.087,
+      "cogvl_stability": 0.7956,
+      "cogvl_score": 0.3705,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7147
+    },
+    {
+      "image": "malignant (207)",
+      "SAM (single)": {
+        "iou": 0.633503220782898,
+        "dice": 0.7756375533551448,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7306141219753786,
+        "dice": 0.8443408761063755,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7089905920633798,
+        "dice": 0.8297185430463576,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7727225690731606,
+        "dice": 0.87179187827136,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8166604433280152,
+        "dice": 0.8990787973914831,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0771,
+      "cogvl_stability": 0.7839,
+      "cogvl_score": 0.3598,
+      "cogvl_unreliable": false,
+      "global_stability": 0.755
+    },
+    {
+      "image": "malignant (208)",
+      "SAM (single)": {
+        "iou": 0.36790428599573727,
+        "dice": 0.5379093987236527,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.35908564314491725,
+        "dice": 0.5284223918575064,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4396877383734305,
+        "dice": 0.6108098675205679,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.47637395019890966,
+        "dice": 0.6453296607336217,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7477024228994879,
+        "dice": 0.8556404260846974,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1471,
+      "cogvl_stability": 0.481,
+      "cogvl_score": 0.2807,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3725
+    },
+    {
+      "image": "malignant (209)",
+      "SAM (single)": {
+        "iou": 0.6461839530332681,
+        "dice": 0.7850689491203043,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6526418786692759,
+        "dice": 0.7898164594434577,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6441274184092242,
+        "dice": 0.7835492689884702,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6883394977613393,
+        "dice": 0.815404127752796,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7662010089251067,
+        "dice": 0.8676260573437329,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0234,
+      "cogvl_stability": 0.9249,
+      "cogvl_score": 0.384,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9005
+    },
+    {
+      "image": "malignant (21)",
+      "SAM (single)": {
+        "iou": 0.7678977394586711,
+        "dice": 0.8687128472643455,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7589704577152276,
+        "dice": 0.8629712390975276,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7589704577152276,
+        "dice": 0.8629712390975276,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7678977394586711,
+        "dice": 0.8687128472643455,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7882024318107131,
+        "dice": 0.881558393825232,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0771,
+      "cogvl_stability": 0.7403,
+      "cogvl_score": 0.3424,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6269
+    },
+    {
+      "image": "malignant (210)",
+      "SAM (single)": {
+        "iou": 0.6490858654094921,
+        "dice": 0.7872068750626452,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6545877707483679,
+        "dice": 0.7912397061321186,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6594629020273857,
+        "dice": 0.7947907738361755,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6467940751687771,
+        "dice": 0.785519069957169,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8048710389201016,
+        "dice": 0.8918875881588477,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0462,
+      "cogvl_stability": 0.712,
+      "cogvl_score": 0.3125,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5982
+    },
+    {
+      "image": "malignant (22)",
+      "SAM (single)": {
+        "iou": 0.5120033565617133,
+        "dice": 0.677251613681607,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.29969201244331634,
+        "dice": 0.46117389285161414,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5354676529226502,
+        "dice": 0.697465234000113,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.565693602218775,
+        "dice": 0.7226108625814394,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7245316910443931,
+        "dice": 0.8402648612454431,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0341,
+      "cogvl_stability": 0.759,
+      "cogvl_score": 0.3241,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6552
+    },
+    {
+      "image": "malignant (23)",
+      "SAM (single)": {
+        "iou": 0.5988152811996228,
+        "dice": 0.749073752598011,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.33071000530986877,
+        "dice": 0.4970429379658263,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5721648078968178,
+        "dice": 0.7278687387262384,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5988152811996228,
+        "dice": 0.749073752598011,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8244676636064163,
+        "dice": 0.903789834210265,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1641,
+      "cogvl_stability": 0.6636,
+      "cogvl_score": 0.3639,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5644
+    },
+    {
+      "image": "malignant (24)",
+      "SAM (single)": {
+        "iou": 0.7688321782498867,
+        "dice": 0.8693104837233147,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6766568172224567,
+        "dice": 0.8071500503524672,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.45016673155373493,
+        "dice": 0.6208482400798399,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7662725518424357,
+        "dice": 0.8676719241808076,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8536482425633927,
+        "dice": 0.9210466397690326,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1339,
+      "cogvl_stability": 0.5901,
+      "cogvl_score": 0.3164,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4825
+    },
+    {
+      "image": "malignant (25)",
+      "SAM (single)": {
+        "iou": 0.08948033365806138,
+        "dice": 0.16426241189250362,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3307967788846949,
+        "dice": 0.497140937118779,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6822541105515267,
+        "dice": 0.8111189698063509,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4296743141002774,
+        "dice": 0.6010799940414122,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7380534381406517,
+        "dice": 0.8492873946732181,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1161,
+      "cogvl_stability": 0.5811,
+      "cogvl_score": 0.3021,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4283
+    },
+    {
+      "image": "malignant (26)",
+      "SAM (single)": {
+        "iou": 0.8247998791723304,
+        "dice": 0.9039894057275285,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8377196289872558,
+        "dice": 0.9116947066064833,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8763436818762685,
+        "dice": 0.9340971916189256,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8809113392790227,
+        "dice": 0.9366856596405945,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8861526946107784,
+        "dice": 0.9396404619230921,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0478,
+      "cogvl_stability": 0.9286,
+      "cogvl_score": 0.4001,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8989
+    },
+    {
+      "image": "malignant (27)",
+      "SAM (single)": {
+        "iou": 0.7905334728033473,
+        "dice": 0.8830144588871038,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7963180571876224,
+        "dice": 0.886611426079372,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.805259047123145,
+        "dice": 0.8921257571387367,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8049668443635418,
+        "dice": 0.8919464054170869,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8077563035965698,
+        "dice": 0.8936561880487114,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.038,
+      "cogvl_stability": 0.8779,
+      "cogvl_score": 0.374,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8119
+    },
+    {
+      "image": "malignant (28)",
+      "SAM (single)": {
+        "iou": 0.8016221696519095,
+        "dice": 0.8898893265803789,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8021854230032669,
+        "dice": 0.8902362795349419,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8007213706041478,
+        "dice": 0.8893340010015023,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8125772038180797,
+        "dice": 0.8965987237469797,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8150146100247246,
+        "dice": 0.8980804953560372,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0501,
+      "cogvl_stability": 0.8993,
+      "cogvl_score": 0.3898,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8627
+    },
+    {
+      "image": "malignant (29)",
+      "SAM (single)": {
+        "iou": 0.7913991089543809,
+        "dice": 0.8835542063167727,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.46920197725747065,
+        "dice": 0.6387167789323568,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.46920197725747065,
+        "dice": 0.6387167789323568,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.487952974614043,
+        "dice": 0.6558714998914695,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7944546146409692,
+        "dice": 0.8854552332045712,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1454,
+      "cogvl_stability": 0.5843,
+      "cogvl_score": 0.3209,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4963
+    },
+    {
+      "image": "malignant (3)",
+      "SAM (single)": {
+        "iou": 0.5924046488787036,
+        "dice": 0.7440378289473685,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5860065466448445,
+        "dice": 0.7389711573190237,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5929927963326784,
+        "dice": 0.7445015416238437,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6363562024695396,
+        "dice": 0.7777722252760981,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7351134215500945,
+        "dice": 0.8473376004357892,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0684,
+      "cogvl_stability": 0.8151,
+      "cogvl_score": 0.3671,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7453
+    },
+    {
+      "image": "malignant (30)",
+      "SAM (single)": {
+        "iou": 0.636673470173682,
+        "dice": 0.7780091530488594,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5748348200984945,
+        "dice": 0.7300255401547989,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6084262148907713,
+        "dice": 0.7565484935000139,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.640305142972618,
+        "dice": 0.7807146685064155,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8174067449178102,
+        "dice": 0.8995308806942678,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0764,
+      "cogvl_stability": 0.6621,
+      "cogvl_score": 0.3107,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5923
+    },
+    {
+      "image": "malignant (31)",
+      "SAM (single)": {
+        "iou": 0.5655253561439798,
+        "dice": 0.7224735823339408,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5772148969592865,
+        "dice": 0.7319419795895911,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5842773911636187,
+        "dice": 0.7375948106341139,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6336091903958185,
+        "dice": 0.7757169757869653,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6718632953052277,
+        "dice": 0.8037299427433957,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1313,
+      "cogvl_stability": 0.7453,
+      "cogvl_score": 0.3769,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6807
+    },
+    {
+      "image": "malignant (32)",
+      "SAM (single)": {
+        "iou": 0.8424458622030139,
+        "dice": 0.9144864220821128,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8410343560536468,
+        "dice": 0.9136541676022254,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8579207696147388,
+        "dice": 0.9235278313753267,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8583060047495193,
+        "dice": 0.9237509888638715,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.866597327424424,
+        "dice": 0.9285316277830269,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0447,
+      "cogvl_stability": 0.7651,
+      "cogvl_score": 0.3329,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6591
+    },
+    {
+      "image": "malignant (33)",
+      "SAM (single)": {
+        "iou": 0.6088056544670826,
+        "dice": 0.7568417636731264,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6280574934857527,
+        "dice": 0.7715421549899324,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6040803852760478,
+        "dice": 0.753179692016608,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5449400755427183,
+        "dice": 0.705451407688143,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.68161266519085,
+        "dice": 0.810665475231173,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1015,
+      "cogvl_stability": 0.6311,
+      "cogvl_score": 0.3133,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5574
+    },
+    {
+      "image": "malignant (34)",
+      "SAM (single)": {
+        "iou": 0.7403559849136505,
+        "dice": 0.8508098243479584,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7754982795559306,
+        "dice": 0.8735556530642095,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8124557678697806,
+        "dice": 0.8965247950019524,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7902084152575698,
+        "dice": 0.8828116419549698,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.81569659244048,
+        "dice": 0.8984943804340143,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0491,
+      "cogvl_stability": 0.8514,
+      "cogvl_score": 0.37,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8
+    },
+    {
+      "image": "malignant (35)",
+      "SAM (single)": {
+        "iou": 0.4068374236416247,
+        "dice": 0.5783716253275641,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7721326967074505,
+        "dice": 0.8714163427400682,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8057296329453895,
+        "dice": 0.8924144769459593,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7465255429211661,
+        "dice": 0.8548693100388999,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8431940521881864,
+        "dice": 0.9149270541397103,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.111,
+      "cogvl_stability": 0.711,
+      "cogvl_score": 0.351,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5876
+    },
+    {
+      "image": "malignant (36)",
+      "SAM (single)": {
+        "iou": 0.5497535028541775,
+        "dice": 0.7094721861788958,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.726254451278731,
+        "dice": 0.8414222488935563,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.515573535729629,
+        "dice": 0.6803675619493067,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.74146670088541,
+        "dice": 0.8515427834576771,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8420086293950243,
+        "dice": 0.9142287565412409,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0883,
+      "cogvl_stability": 0.5966,
+      "cogvl_score": 0.2916,
+      "cogvl_unreliable": false,
+      "global_stability": 0.515
+    },
+    {
+      "image": "malignant (37)",
+      "SAM (single)": {
+        "iou": 0.7682573161086211,
+        "dice": 0.868942895482332,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6556024457751445,
+        "dice": 0.7919805234017938,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7682573161086211,
+        "dice": 0.868942895482332,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7559020479984359,
+        "dice": 0.8609843001892885,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7830487459737739,
+        "dice": 0.8783256742048615,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1139,
+      "cogvl_stability": 0.745,
+      "cogvl_score": 0.3664,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6622
+    },
+    {
+      "image": "malignant (38)",
+      "SAM (single)": {
+        "iou": 0.6835291869685679,
+        "dice": 0.8120194081094118,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6977166332282412,
+        "dice": 0.8219471018570624,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.703735549823254,
+        "dice": 0.8261088992317613,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7213623769943632,
+        "dice": 0.8381295962258914,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7939206839230587,
+        "dice": 0.8851235074528077,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0333,
+      "cogvl_stability": 0.9461,
+      "cogvl_score": 0.3984,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9231
+    },
+    {
+      "image": "malignant (39)",
+      "SAM (single)": {
+        "iou": 0.7305853014522518,
+        "dice": 0.8443216301897029,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6861485889353679,
+        "dice": 0.8138649149166638,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6861485889353679,
+        "dice": 0.8138649149166638,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7532423208191126,
+        "dice": 0.8592563753163325,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7961681606122556,
+        "dice": 0.8865185098714451,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0933,
+      "cogvl_stability": 0.748,
+      "cogvl_score": 0.3552,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6441
+    },
+    {
+      "image": "malignant (4)",
+      "SAM (single)": {
+        "iou": 0.21247582684583727,
+        "dice": 0.35048257811221983,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5485049631569332,
+        "dice": 0.7084316501494415,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.44910650464617585,
+        "dice": 0.6198391949884082,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4992852037169407,
+        "dice": 0.666030989272944,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6616881647431545,
+        "dice": 0.7964047392074084,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0503,
+      "cogvl_stability": 0.471,
+      "cogvl_score": 0.2186,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3629
+    },
+    {
+      "image": "malignant (40)",
+      "SAM (single)": {
+        "iou": 0.8099932859818368,
+        "dice": 0.8950235255071162,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7938075017692852,
+        "dice": 0.8850531631586215,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8535645472061657,
+        "dice": 0.920997920997921,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8223085068831627,
+        "dice": 0.9024909929105489,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8576198509770843,
+        "dice": 0.9233534520273211,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1081,
+      "cogvl_stability": 0.8155,
+      "cogvl_score": 0.391,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7319
+    },
+    {
+      "image": "malignant (41)",
+      "SAM (single)": {
+        "iou": 0.8657088346376981,
+        "dice": 0.9280213702861198,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8872315263418914,
+        "dice": 0.9402466141095613,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8700307596464587,
+        "dice": 0.9304988756558674,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8681789161377549,
+        "dice": 0.9294387262785462,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8909610983981693,
+        "dice": 0.9423367822351304,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0488,
+      "cogvl_stability": 0.8075,
+      "cogvl_score": 0.3523,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7283
+    },
+    {
+      "image": "malignant (42)",
+      "SAM (single)": {
+        "iou": 0.7423988979631998,
+        "dice": 0.8521572170770273,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8259957394616229,
+        "dice": 0.9047071924769766,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8289646133682831,
+        "dice": 0.9064851307774991,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7656070596726045,
+        "dice": 0.8672451273666413,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8289646133682831,
+        "dice": 0.9064851307774991,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0818,
+      "cogvl_stability": 0.6545,
+      "cogvl_score": 0.3109,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5329
+    },
+    {
+      "image": "malignant (43)",
+      "SAM (single)": {
+        "iou": 0.7320021222206144,
+        "dice": 0.8452670038095662,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.2817271047560496,
+        "dice": 0.4396054412997228,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.2849872943693995,
+        "dice": 0.4435643770458531,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6377250886883111,
+        "dice": 0.778793819662467,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.794400924617953,
+        "dice": 0.8854218850640521,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0646,
+      "cogvl_stability": 0.6416,
+      "cogvl_score": 0.2954,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5924
+    },
+    {
+      "image": "malignant (44)",
+      "SAM (single)": {
+        "iou": 0.6175863086456181,
+        "dice": 0.7635899306822328,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5953083505458837,
+        "dice": 0.7463238694164431,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5523015638831513,
+        "dice": 0.7115905526778501,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6933175984658504,
+        "dice": 0.8188866626012719,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7613069016152717,
+        "dice": 0.8644795531285172,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0558,
+      "cogvl_stability": 0.9184,
+      "cogvl_score": 0.4008,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8993
+    },
+    {
+      "image": "malignant (45)",
+      "SAM (single)": {
+        "iou": 0.7540020577269861,
+        "dice": 0.8597504825098079,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7715784631832817,
+        "dice": 0.8710632683994836,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5023229036965632,
+        "dice": 0.6687282773371357,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7462771148820955,
+        "dice": 0.8547064020047956,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8115592866722965,
+        "dice": 0.8959787213622715,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1049,
+      "cogvl_stability": 0.5863,
+      "cogvl_score": 0.2975,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5037
+    },
+    {
+      "image": "malignant (46)",
+      "SAM (single)": {
+        "iou": 0.5441836244191636,
+        "dice": 0.704817245583543,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6056834100460277,
+        "dice": 0.7544244478787576,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6021212727636582,
+        "dice": 0.7516550500886857,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6112531969309463,
+        "dice": 0.7587301587301587,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6352309681463778,
+        "dice": 0.7769311865056546,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.049,
+      "cogvl_stability": 0.902,
+      "cogvl_score": 0.3902,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8736
+    },
+    {
+      "image": "malignant (47)",
+      "SAM (single)": {
+        "iou": 0.017666810159276798,
+        "dice": 0.034720224700089675,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.3130149531499379,
+        "dice": 0.4767881011545397,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.36965662228451296,
+        "dice": 0.539779994883602,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.3130149531499379,
+        "dice": 0.4767881011545397,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7784157205563684,
+        "dice": 0.8754035533523568,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1325,
+      "cogvl_stability": 0.4023,
+      "cogvl_score": 0.2404,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3756
+    },
+    {
+      "image": "malignant (48)",
+      "SAM (single)": {
+        "iou": 0.7621199356666922,
+        "dice": 0.8650034770514604,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7879863996977711,
+        "dice": 0.881423258958756,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7764092489043373,
+        "dice": 0.8741333106469863,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7764092489043373,
+        "dice": 0.8741333106469863,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8153671461014383,
+        "dice": 0.8982944831324798,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0783,
+      "cogvl_stability": 0.9604,
+      "cogvl_score": 0.4312,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9484
+    },
+    {
+      "image": "malignant (49)",
+      "SAM (single)": {
+        "iou": 0.604085392284352,
+        "dice": 0.7531835838540787,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.43516256852846985,
+        "dice": 0.6064296520423601,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6130342922151796,
+        "dice": 0.7601007556675063,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6621021663546403,
+        "dice": 0.7967045344833135,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.698636099825885,
+        "dice": 0.8225847783377467,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0462,
+      "cogvl_stability": 0.795,
+      "cogvl_score": 0.3457,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7316
+    },
+    {
+      "image": "malignant (5)",
+      "SAM (single)": {
+        "iou": 0.7226129840730859,
+        "dice": 0.8389731074294833,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5500294538416225,
+        "dice": 0.7097019382159726,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6805253471641292,
+        "dice": 0.8098959629648066,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6535899333826795,
+        "dice": 0.7905102954341987,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7226129840730859,
+        "dice": 0.8389731074294833,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0645,
+      "cogvl_stability": 0.6588,
+      "cogvl_score": 0.3022,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5726
+    },
+    {
+      "image": "malignant (50)",
+      "SAM (single)": {
+        "iou": 0.6703222473874518,
+        "dice": 0.8026262578204915,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.49332035264211155,
+        "dice": 0.6607026439695762,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5531595724732796,
+        "dice": 0.712302305927804,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5622440622440622,
+        "dice": 0.7197903014416775,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7366475697652929,
+        "dice": 0.8483558582526338,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0409,
+      "cogvl_stability": 0.6967,
+      "cogvl_score": 0.3032,
+      "cogvl_unreliable": false,
+      "global_stability": 0.593
+    },
+    {
+      "image": "malignant (51)",
+      "SAM (single)": {
+        "iou": 0.46794762311414745,
+        "dice": 0.6375535690046346,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.46982071231817524,
+        "dice": 0.6392898240999507,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5784961600285765,
+        "dice": 0.7329712604661688,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.47658142981486273,
+        "dice": 0.6455200101962784,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7535910660244661,
+        "dice": 0.8594832405629421,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0392,
+      "cogvl_stability": 0.5686,
+      "cogvl_score": 0.251,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4439
+    },
+    {
+      "image": "malignant (52)",
+      "SAM (single)": {
+        "iou": 0.20190932560687952,
+        "dice": 0.3359809617999753,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.40766451913632656,
+        "dice": 0.5792069255058718,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6737387749142147,
+        "dice": 0.8050704028754384,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5306098818972232,
+        "dice": 0.6933313160627463,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7137957885319505,
+        "dice": 0.8329998163239658,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0267,
+      "cogvl_stability": 0.4746,
+      "cogvl_score": 0.2059,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3988
+    },
+    {
+      "image": "malignant (53)",
+      "SAM (single)": {
+        "iou": 0.37771345875542695,
+        "dice": 0.5483193277310925,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5876288659793815,
+        "dice": 0.7402597402597403,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5958230958230958,
+        "dice": 0.7467282525019245,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6045340050377834,
+        "dice": 0.7535321821036107,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6950354609929078,
+        "dice": 0.8200836820083682,
+        "hallucination": false
+      },
+      "cogvl_semantic": -0.0228,
+      "cogvl_stability": 0.7163,
+      "cogvl_score": 0.2729,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6121
+    },
+    {
+      "image": "malignant (54)",
+      "SAM (single)": {
+        "iou": 0.6900083840629898,
+        "dice": 0.8165739182951555,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7471867147383372,
+        "dice": 0.8553026513256629,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6900083840629898,
+        "dice": 0.8165739182951555,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7324220885729907,
+        "dice": 0.8455469292431989,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7904587419621367,
+        "dice": 0.8829678377239621,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0274,
+      "cogvl_stability": 0.9525,
+      "cogvl_score": 0.3974,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9395
+    },
+    {
+      "image": "malignant (55)",
+      "SAM (single)": {
+        "iou": 0.685165575664228,
+        "dice": 0.8131730027705578,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.747573282075925,
+        "dice": 0.8555558610828499,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7466115543593195,
+        "dice": 0.8549257017061089,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.747573282075925,
+        "dice": 0.8555558610828499,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7760564055830016,
+        "dice": 0.8739096383915309,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0757,
+      "cogvl_stability": 0.9545,
+      "cogvl_score": 0.4272,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9451
+    },
+    {
+      "image": "malignant (56)",
+      "SAM (single)": {
+        "iou": 0.7434706581800378,
+        "dice": 0.852862828166121,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6708771134838143,
+        "dice": 0.8030238825703002,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6585334750265674,
+        "dice": 0.7941153856011482,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7804809882477886,
+        "dice": 0.8767080282231797,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8005110248888048,
+        "dice": 0.8892042468201409,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1238,
+      "cogvl_stability": 0.771,
+      "cogvl_score": 0.3827,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6791
+    },
+    {
+      "image": "malignant (57)",
+      "SAM (single)": {
+        "iou": 0.13378793900474825,
+        "dice": 0.2360016973230264,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6590799740602055,
+        "dice": 0.7945126026050007,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6667827369369739,
+        "dice": 0.8000835647749895,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6699878292798647,
+        "dice": 0.8023864815455309,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7236692689850958,
+        "dice": 0.8396845984394623,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0546,
+      "cogvl_stability": 0.6757,
+      "cogvl_score": 0.303,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5574
+    },
+    {
+      "image": "malignant (58)",
+      "SAM (single)": {
+        "iou": 0.8437556386132233,
+        "dice": 0.9152575546810012,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8391069360442671,
+        "dice": 0.912515655940161,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8391069360442671,
+        "dice": 0.912515655940161,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.841203582920254,
+        "dice": 0.9137540147364444,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8653047604923625,
+        "dice": 0.927789151477808,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0913,
+      "cogvl_stability": 0.6838,
+      "cogvl_score": 0.3283,
+      "cogvl_unreliable": false,
+      "global_stability": 0.5329
+    },
+    {
+      "image": "malignant (59)",
+      "SAM (single)": {
+        "iou": 0.7688034233867076,
+        "dice": 0.8692921024708201,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.41905510823367087,
+        "dice": 0.5906114650547687,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6248387383780417,
+        "dice": 0.769108618128803,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5545996447467398,
+        "dice": 0.7134951389199498,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7688034233867076,
+        "dice": 0.8692921024708201,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1553,
+      "cogvl_stability": 0.4496,
+      "cogvl_score": 0.273,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4155
+    },
+    {
+      "image": "malignant (6)",
+      "SAM (single)": {
+        "iou": 0.7629641358562267,
+        "dice": 0.8655469732351356,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6184636742248959,
+        "dice": 0.7642601858470336,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6387476432611552,
+        "dice": 0.7795558344664086,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7668935175637589,
+        "dice": 0.8680698751118546,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8021281589859949,
+        "dice": 0.8902010159336604,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0565,
+      "cogvl_stability": 0.7616,
+      "cogvl_score": 0.3385,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7103
+    },
+    {
+      "image": "malignant (60)",
+      "SAM (single)": {
+        "iou": 0.04440626528385649,
+        "dice": 0.08503638241156553,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.5748192694005502,
+        "dice": 0.7300129996750081,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6968777791894295,
+        "dice": 0.8213647296652286,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5232651871162488,
+        "dice": 0.6870309799528236,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8483552918593491,
+        "dice": 0.9179569486404834,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1688,
+      "cogvl_stability": 0.4723,
+      "cogvl_score": 0.2902,
+      "cogvl_unreliable": false,
+      "global_stability": 0.377
+    },
+    {
+      "image": "malignant (61)",
+      "SAM (single)": {
+        "iou": 0.46695197337137423,
+        "dice": 0.6366288492706645,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5592710544939844,
+        "dice": 0.7173493702484965,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7410097223849127,
+        "dice": 0.8512413375496198,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6817593790426908,
+        "dice": 0.8107692307692308,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8106192633902637,
+        "dice": 0.8954055441478439,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0077,
+      "cogvl_stability": 0.7979,
+      "cogvl_score": 0.3238,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7213
+    },
+    {
+      "image": "malignant (62)",
+      "SAM (single)": {
+        "iou": 0.7571814254859611,
+        "dice": 0.8618136004670743,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7920511385182109,
+        "dice": 0.8839604199834747,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7394657467444506,
+        "dice": 0.8502216822934513,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7394657467444506,
+        "dice": 0.8502216822934513,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8712686235070044,
+        "dice": 0.9312063618895421,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0791,
+      "cogvl_stability": 0.751,
+      "cogvl_score": 0.3478,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6511
+    },
+    {
+      "image": "malignant (63)",
+      "SAM (single)": {
+        "iou": 0.4777523518942283,
+        "dice": 0.6465932553337922,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5415077319587629,
+        "dice": 0.702568946924035,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7459545136201113,
+        "dice": 0.8544947852890259,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7976348177942628,
+        "dice": 0.887426978937778,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8190144898520983,
+        "dice": 0.9005035357565419,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0799,
+      "cogvl_stability": 0.5648,
+      "cogvl_score": 0.2739,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4745
+    },
+    {
+      "image": "malignant (64)",
+      "SAM (single)": {
+        "iou": 0.46189841390755504,
+        "dice": 0.6319158835023727,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "Random-5": {
+        "iou": 0.6386497430836765,
+        "dice": 0.7794829197383449,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5702379235760634,
+        "dice": 0.726307669703203,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6424854501882917,
+        "dice": 0.7823332013256352,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0799,
+      "cogvl_stability": 0.4737,
+      "cogvl_score": 0.2374,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3279
+    },
+    {
+      "image": "malignant (65)",
+      "SAM (single)": {
+        "iou": 0.6619860543399856,
+        "dice": 0.7966204681577501,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6586621751684312,
+        "dice": 0.7942089534917457,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6536237471087124,
+        "dice": 0.79053502739247,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6642388231347932,
+        "dice": 0.798249402551035,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8432951088228411,
+        "dice": 0.9149865420750597,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0905,
+      "cogvl_stability": 0.8824,
+      "cogvl_score": 0.4073,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8421
+    },
+    {
+      "image": "malignant (66)",
+      "SAM (single)": {
+        "iou": 0.6795894564963845,
+        "dice": 0.8092328203988667,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8566103826118197,
+        "dice": 0.9227680623080086,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6830838113893941,
+        "dice": 0.8117050461384986,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8188175753393144,
+        "dice": 0.900384498634018,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8589784192191106,
+        "dice": 0.9241402808537564,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1193,
+      "cogvl_stability": 0.8416,
+      "cogvl_score": 0.4082,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8075
+    },
+    {
+      "image": "malignant (67)",
+      "SAM (single)": {
+        "iou": 0.6955209598468955,
+        "dice": 0.8204215416006425,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.44236502153030804,
+        "dice": 0.6133884487311976,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.44236502153030804,
+        "dice": 0.6133884487311976,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7977029312288614,
+        "dice": 0.8874691333829813,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7977029312288614,
+        "dice": 0.8874691333829813,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0613,
+      "cogvl_stability": 0.757,
+      "cogvl_score": 0.3396,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6871
+    },
+    {
+      "image": "malignant (68)",
+      "SAM (single)": {
+        "iou": 0.7176144610106874,
+        "dice": 0.8355943400574598,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6043159445523337,
+        "dice": 0.7533627607509209,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8593673147117451,
+        "dice": 0.9243653020166932,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7366227410809634,
+        "dice": 0.8483393930710034,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8833802382512819,
+        "dice": 0.9380795447567192,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0995,
+      "cogvl_stability": 0.6708,
+      "cogvl_score": 0.328,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6055
+    },
+    {
+      "image": "malignant (69)",
+      "SAM (single)": {
+        "iou": 0.06855651218171827,
+        "dice": 0.12831611880169716,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.656983400114482,
+        "dice": 0.7929873046031609,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.656983400114482,
+        "dice": 0.7929873046031609,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.622373453877105,
+        "dice": 0.7672382118799755,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6732136810023704,
+        "dice": 0.804695405788302,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0681,
+      "cogvl_stability": 0.5642,
+      "cogvl_score": 0.2665,
+      "cogvl_unreliable": false,
+      "global_stability": 0.381
+    },
+    {
+      "image": "malignant (7)",
+      "SAM (single)": {
+        "iou": 0.686214708957825,
+        "dice": 0.8139114257661103,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6475073794686782,
+        "dice": 0.7860448912556611,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6475073794686782,
+        "dice": 0.7860448912556611,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.637302456579565,
+        "dice": 0.7784785932721713,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.686214708957825,
+        "dice": 0.8139114257661103,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0705,
+      "cogvl_stability": 0.8534,
+      "cogvl_score": 0.3837,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7985
+    },
+    {
+      "image": "malignant (70)",
+      "SAM (single)": {
+        "iou": 0.785250917992656,
+        "dice": 0.879709300332522,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.80413818359375,
+        "dice": 0.891437464054941,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8074272821513507,
+        "dice": 0.8934547908232119,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8165461066196584,
+        "dice": 0.8990095034131977,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8229033631332482,
+        "dice": 0.9028491359177955,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1005,
+      "cogvl_stability": 0.9327,
+      "cogvl_score": 0.4334,
+      "cogvl_unreliable": false,
+      "global_stability": 0.9148
+    },
+    {
+      "image": "malignant (71)",
+      "SAM (single)": {
+        "iou": 0.7159007615569055,
+        "dice": 0.8344314281990761,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.2651664909113657,
+        "dice": 0.41918038901006993,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.4499055396428789,
+        "dice": 0.6205997940440914,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5378114634812993,
+        "dice": 0.6994504544319121,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7290108280587958,
+        "dice": 0.8432692453144145,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.17,
+      "cogvl_stability": 0.5297,
+      "cogvl_score": 0.3139,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4498
+    },
+    {
+      "image": "malignant (72)",
+      "SAM (single)": {
+        "iou": 0.6590832423284295,
+        "dice": 0.7945149773237942,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6138904131861879,
+        "dice": 0.7607584854218548,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.612712217001715,
+        "dice": 0.759853135038368,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6545647814318434,
+        "dice": 0.7912229110369311,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8077124699292665,
+        "dice": 0.8936293612676923,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1625,
+      "cogvl_stability": 0.7772,
+      "cogvl_score": 0.4084,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7067
+    },
+    {
+      "image": "malignant (73)",
+      "SAM (single)": {
+        "iou": 0.653173311635476,
+        "dice": 0.7902054878799065,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8092468157657206,
+        "dice": 0.8945676274944567,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6724330925002544,
+        "dice": 0.8041375114085793,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7224022685841605,
+        "dice": 0.8388310695595931,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8338595106550908,
+        "dice": 0.9094039165052722,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.026,
+      "cogvl_stability": 0.8778,
+      "cogvl_score": 0.3667,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8466
+    },
+    {
+      "image": "malignant (74)",
+      "SAM (single)": {
+        "iou": 0.7609078114004222,
+        "dice": 0.8642222000199821,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7733825597749648,
+        "dice": 0.8722117577079409,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7564972249141045,
+        "dice": 0.861370247768081,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7931155602388479,
+        "dice": 0.8846229187071498,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8216052060737528,
+        "dice": 0.9020672573116129,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0285,
+      "cogvl_stability": 0.9001,
+      "cogvl_score": 0.3771,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8625
+    },
+    {
+      "image": "malignant (75)",
+      "SAM (single)": {
+        "iou": 0.5899774419676426,
+        "dice": 0.7421205186880244,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8119070829073445,
+        "dice": 0.8961906386552416,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.890361222885158,
+        "dice": 0.9420011499455611,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.904143416834857,
+        "dice": 0.9496589477884604,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.9065866274379538,
+        "dice": 0.9510049156866406,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1016,
+      "cogvl_stability": 0.7729,
+      "cogvl_score": 0.3701,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6534
+    },
+    {
+      "image": "malignant (76)",
+      "SAM (single)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.5368472486719454,
+        "dice": 0.6986344923164717,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3847001532939735,
+        "dice": 0.5556439816646733,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4185405621347851,
+        "dice": 0.5901002386634845,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6296920459784734,
+        "dice": 0.7727742766277096,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1325,
+      "cogvl_stability": 0.4373,
+      "cogvl_score": 0.2544,
+      "cogvl_unreliable": false,
+      "global_stability": 0.313
+    },
+    {
+      "image": "malignant (77)",
+      "SAM (single)": {
+        "iou": 0.812557042896258,
+        "dice": 0.8965864507059984,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8197636867900155,
+        "dice": 0.9009561985886676,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.80209324452902,
+        "dice": 0.8901795142555439,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8293072014585232,
+        "dice": 0.9066899215148873,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8580221583914649,
+        "dice": 0.9235865724381626,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0467,
+      "cogvl_stability": 0.902,
+      "cogvl_score": 0.3888,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8465
+    },
+    {
+      "image": "malignant (78)",
+      "SAM (single)": {
+        "iou": 0.7311026174794389,
+        "dice": 0.8446669886548451,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.734829238350185,
+        "dice": 0.8471487822617105,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.737269763233813,
+        "dice": 0.8487683131736938,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7378468671166565,
+        "dice": 0.8491506139903487,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7702235772357724,
+        "dice": 0.8701992077616396,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0539,
+      "cogvl_stability": 0.8933,
+      "cogvl_score": 0.3897,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8334
+    },
+    {
+      "image": "malignant (79)",
+      "SAM (single)": {
+        "iou": 0.46685959271168276,
+        "dice": 0.6365429861608383,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5446410495201847,
+        "dice": 0.7052007968962987,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6826972144503687,
+        "dice": 0.8114320373120281,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5485184567489437,
+        "dice": 0.7084429047110457,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8151533703476957,
+        "dice": 0.8981647321532413,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1139,
+      "cogvl_stability": 0.4531,
+      "cogvl_score": 0.2496,
+      "cogvl_unreliable": false,
+      "global_stability": 0.335
+    },
+    {
+      "image": "malignant (8)",
+      "SAM (single)": {
+        "iou": 0.7261453396524487,
+        "dice": 0.8413490138653732,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7947655974621078,
+        "dice": 0.8856483527274512,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6822742474916388,
+        "dice": 0.8111332007952287,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6833007883127215,
+        "dice": 0.8118582169709989,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7947655974621078,
+        "dice": 0.8856483527274512,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0496,
+      "cogvl_stability": 0.8364,
+      "cogvl_score": 0.3643,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7768
+    },
+    {
+      "image": "malignant (80)",
+      "SAM (single)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "Random-5": {
+        "iou": 0.2911873586921414,
+        "dice": 0.4510381188785622,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.47807025489592203,
+        "dice": 0.6468843457371182,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6079389401254734,
+        "dice": 0.756171674128414,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0344,
+      "cogvl_stability": 0.2883,
+      "cogvl_score": 0.136,
+      "cogvl_unreliable": true,
+      "global_stability": 0.1956
+    },
+    {
+      "image": "malignant (81)",
+      "SAM (single)": {
+        "iou": 0.04409136692985021,
+        "dice": 0.08445882865500716,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.6544866471436689,
+        "dice": 0.7911658256941325,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6922496647295485,
+        "dice": 0.8181412934009147,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5534452212675975,
+        "dice": 0.7125390888466491,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8071554035314782,
+        "dice": 0.8932883159402496,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0363,
+      "cogvl_stability": 0.2888,
+      "cogvl_score": 0.1373,
+      "cogvl_unreliable": true,
+      "global_stability": 0.1913
+    },
+    {
+      "image": "malignant (82)",
+      "SAM (single)": {
+        "iou": 0.7218733719049055,
+        "dice": 0.8384744008280914,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7727323753929053,
+        "dice": 0.8717981192413641,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7727323753929053,
+        "dice": 0.8717981192413641,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.657620661504589,
+        "dice": 0.7934513327164732,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7787673044705052,
+        "dice": 0.8756258365141526,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0324,
+      "cogvl_stability": 0.6818,
+      "cogvl_score": 0.2922,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6228
+    },
+    {
+      "image": "malignant (83)",
+      "SAM (single)": {
+        "iou": 0.5852822080819767,
+        "dice": 0.7383949748481768,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.5166579269358503,
+        "dice": 0.6813110824267011,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.5257051282051282,
+        "dice": 0.6891307087937482,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6135677633564744,
+        "dice": 0.7605106860590188,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6369838703316638,
+        "dice": 0.7782408634272086,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0887,
+      "cogvl_stability": 0.7458,
+      "cogvl_score": 0.3515,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6691
+    },
+    {
+      "image": "malignant (84)",
+      "SAM (single)": {
+        "iou": 0.6289603082070259,
+        "dice": 0.7722230002022749,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7626647107918764,
+        "dice": 0.8653542629207679,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7473766918436661,
+        "dice": 0.8554271043355913,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7626647107918764,
+        "dice": 0.8653542629207679,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.845900430239705,
+        "dice": 0.9165179403851789,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0838,
+      "cogvl_stability": 0.8367,
+      "cogvl_score": 0.385,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7941
+    },
+    {
+      "image": "malignant (85)",
+      "SAM (single)": {
+        "iou": 0.593898607948814,
+        "dice": 0.7452150406393808,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6337819145870555,
+        "dice": 0.7758464075632104,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6878410481606796,
+        "dice": 0.8150542954388419,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7823729974178638,
+        "dice": 0.8779004154027166,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8140880250351699,
+        "dice": 0.8975176659571269,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1026,
+      "cogvl_stability": 0.7999,
+      "cogvl_score": 0.3815,
+      "cogvl_unreliable": false,
+      "global_stability": 0.759
+    },
+    {
+      "image": "malignant (86)",
+      "SAM (single)": {
+        "iou": 0.6191108642631185,
+        "dice": 0.764754135035571,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.2842290395061643,
+        "dice": 0.44264540165741983,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6041105265409128,
+        "dice": 0.7532031197920138,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6584989166013554,
+        "dice": 0.7940902583774618,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7742660892604674,
+        "dice": 0.8727733612754663,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1504,
+      "cogvl_stability": 0.4689,
+      "cogvl_score": 0.2778,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3462
+    },
+    {
+      "image": "malignant (87)",
+      "SAM (single)": {
+        "iou": 0.8781219432670362,
+        "dice": 0.9351064199159751,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.869141198343064,
+        "dice": 0.9299898788957526,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.869141198343064,
+        "dice": 0.9299898788957526,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8794379421641183,
+        "dice": 0.9358520677213433,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8859988931931378,
+        "dice": 0.9395539906103286,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0954,
+      "cogvl_stability": 0.8993,
+      "cogvl_score": 0.417,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8271
+    },
+    {
+      "image": "malignant (88)",
+      "SAM (single)": {
+        "iou": 0.8675084370999651,
+        "dice": 0.9290543698395388,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8991885052790786,
+        "dice": 0.9469186473903455,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8955788248981966,
+        "dice": 0.9449133036673316,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8991885052790786,
+        "dice": 0.9469186473903455,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.9196407812136712,
+        "dice": 0.9581384081997244,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0811,
+      "cogvl_stability": 0.903,
+      "cogvl_score": 0.4099,
+      "cogvl_unreliable": false,
+      "global_stability": 0.8514
+    },
+    {
+      "image": "malignant (89)",
+      "SAM (single)": {
+        "iou": 0.5974174539947987,
+        "dice": 0.7479791240552501,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6539899705291989,
+        "dice": 0.7908028249046188,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6972600045168763,
+        "dice": 0.8216301599769928,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6876333453831487,
+        "dice": 0.8149084601395253,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7308045203615066,
+        "dice": 0.84446800521282,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0286,
+      "cogvl_stability": 0.7359,
+      "cogvl_score": 0.3115,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6298
+    },
+    {
+      "image": "malignant (9)",
+      "SAM (single)": {
+        "iou": 0.8418467583497053,
+        "dice": 0.9141333333333334,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.8439927732610659,
+        "dice": 0.915397050898937,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.8091380722672249,
+        "dice": 0.8945011822709664,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8418467583497053,
+        "dice": 0.9141333333333334,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.846983902352733,
+        "dice": 0.9171535293554257,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0583,
+      "cogvl_stability": 0.8534,
+      "cogvl_score": 0.3763,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7838
+    },
+    {
+      "image": "malignant (90)",
+      "SAM (single)": {
+        "iou": 0.44048261826639534,
+        "dice": 0.6115764434513083,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6978424032655518,
+        "dice": 0.8220343677638795,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.754938938612408,
+        "dice": 0.8603592090894305,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.7370231892128396,
+        "dice": 0.848604893463551,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.754938938612408,
+        "dice": 0.8603592090894305,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0887,
+      "cogvl_stability": 0.5997,
+      "cogvl_score": 0.2931,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4584
+    },
+    {
+      "image": "malignant (91)",
+      "SAM (single)": {
+        "iou": 0.2519602006973382,
+        "dice": 0.40250512844896685,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.32209972051080127,
+        "dice": 0.4872548046320683,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.2449348939970855,
+        "dice": 0.3934902864047426,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.33950637983937226,
+        "dice": 0.5069126731297605,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6247082265869627,
+        "dice": 0.769009741397435,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1388,
+      "cogvl_stability": 0.4856,
+      "cogvl_score": 0.2775,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3724
+    },
+    {
+      "image": "malignant (92)",
+      "SAM (single)": {
+        "iou": 0.5847492184314258,
+        "dice": 0.737970666437945,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.641131221719457,
+        "dice": 0.7813284071796851,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6517250747079598,
+        "dice": 0.7891447368421053,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6636109104046243,
+        "dice": 0.797795814218627,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6709026181785408,
+        "dice": 0.8030421532403786,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0715,
+      "cogvl_stability": 0.7611,
+      "cogvl_score": 0.3473,
+      "cogvl_unreliable": false,
+      "global_stability": 0.6378
+    },
+    {
+      "image": "malignant (93)",
+      "SAM (single)": {
+        "iou": 0.7724060691714888,
+        "dice": 0.871590413287797,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.7749660009066425,
+        "dice": 0.8732178537626009,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.7749660009066425,
+        "dice": 0.8732178537626009,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.8114662849872774,
+        "dice": 0.8959220402967385,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.8582101414719441,
+        "dice": 0.9236954662104363,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.112,
+      "cogvl_stability": 0.847,
+      "cogvl_score": 0.406,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7707
+    },
+    {
+      "image": "malignant (94)",
+      "SAM (single)": {
+        "iou": 0.6001699104108743,
+        "dice": 0.7501327284135335,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.6050228310502284,
+        "dice": 0.7539118065433855,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6407524844360234,
+        "dice": 0.7810470994426311,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.4690243415802075,
+        "dice": 0.638552171403348,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6407524844360234,
+        "dice": 0.7810470994426311,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.1543,
+      "cogvl_stability": 0.4831,
+      "cogvl_score": 0.2858,
+      "cogvl_unreliable": false,
+      "global_stability": 0.409
+    },
+    {
+      "image": "malignant (95)",
+      "SAM (single)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "SAM (best conf)": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "Random-5": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "hallucination": true
+      },
+      "CogVL (ours)": {
+        "iou": 0.0032824672482712337,
+        "dice": 0.006543455817132221,
+        "hallucination": true
+      },
+      "Oracle": {
+        "iou": 0.8626390191611952,
+        "dice": 0.9262546422437437,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0432,
+      "cogvl_stability": 0.379,
+      "cogvl_score": 0.1775,
+      "cogvl_unreliable": false,
+      "global_stability": 0.2881
+    },
+    {
+      "image": "malignant (96)",
+      "SAM (single)": {
+        "iou": 0.2990396958625457,
+        "dice": 0.4604011668234467,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.4392654866210256,
+        "dice": 0.6104023068770897,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.3636577840112202,
+        "dice": 0.5333563717746183,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.3711418161820307,
+        "dice": 0.5413616765266219,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7085456772573986,
+        "dice": 0.8294137952399075,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0821,
+      "cogvl_stability": 0.6012,
+      "cogvl_score": 0.2897,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4586
+    },
+    {
+      "image": "malignant (97)",
+      "SAM (single)": {
+        "iou": 0.12123582323034807,
+        "dice": 0.21625392396232995,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3864695794990701,
+        "dice": 0.5574872831161591,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.38190572731880384,
+        "dice": 0.5527232715936182,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.444703656998739,
+        "dice": 0.6156330467420241,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6426525436371774,
+        "dice": 0.7824570644918125,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.076,
+      "cogvl_stability": 0.5016,
+      "cogvl_score": 0.2462,
+      "cogvl_unreliable": false,
+      "global_stability": 0.3305
+    },
+    {
+      "image": "malignant (98)",
+      "SAM (single)": {
+        "iou": 0.6148153741599336,
+        "dice": 0.7614683189151275,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.636987851807138,
+        "dice": 0.7782438349850196,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6849117752970831,
+        "dice": 0.8129942295362257,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.6200478397368815,
+        "dice": 0.7654685553453606,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.7372498820993061,
+        "dice": 0.8487551384472194,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.0488,
+      "cogvl_stability": 0.7892,
+      "cogvl_score": 0.345,
+      "cogvl_unreliable": false,
+      "global_stability": 0.7072
+    },
+    {
+      "image": "malignant (99)",
+      "SAM (single)": {
+        "iou": 0.46325648414985593,
+        "dice": 0.6331856228458888,
+        "hallucination": false
+      },
+      "SAM (best conf)": {
+        "iou": 0.3606387793366522,
+        "dice": 0.5301021620337373,
+        "hallucination": false
+      },
+      "Random-5": {
+        "iou": 0.6282615875811957,
+        "dice": 0.7716961357720004,
+        "hallucination": false
+      },
+      "CogVL (ours)": {
+        "iou": 0.5582608695652174,
+        "dice": 0.7165178571428571,
+        "hallucination": false
+      },
+      "Oracle": {
+        "iou": 0.6282615875811957,
+        "dice": 0.7716961357720004,
+        "hallucination": false
+      },
+      "cogvl_semantic": 0.068,
+      "cogvl_stability": 0.5338,
+      "cogvl_score": 0.2544,
+      "cogvl_unreliable": false,
+      "global_stability": 0.4155
+    }
+  ]
+}

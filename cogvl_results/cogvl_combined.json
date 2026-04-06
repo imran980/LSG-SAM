@@ -1,0 +1,44 @@
+{
+  "config": {
+    "datasets": "busi_malignant",
+    "output_dir": "/home/mi3dr/SCCS/eccv/cogvl_results",
+    "top_k": 5,
+    "alpha": 0.6,
+    "beta": 0.4,
+    "tau_semantic": -0.05,
+    "tau_stability": 0.3,
+    "device": "cuda"
+  },
+  "datasets": {
+    "busi_malignant": {
+      "n_images": 210,
+      "summary": {
+        "SAM (single)": {
+          "iou": 0.5303,
+          "dice": 0.6447,
+          "hallucination_rate": 0.1048
+        },
+        "SAM (best conf)": {
+          "iou": 0.5955,
+          "dice": 0.7273,
+          "hallucination_rate": 0.0238
+        },
+        "Random-5": {
+          "iou": 0.6179,
+          "dice": 0.749,
+          "hallucination_rate": 0.0143
+        },
+        "CogVL (ours)": {
+          "iou": 0.6581,
+          "dice": 0.7833,
+          "hallucination_rate": 0.0048
+        },
+        "Oracle": {
+          "iou": 0.7598,
+          "dice": 0.8611,
+          "hallucination_rate": 0.0
+        }
+      }
+    }
+  }
+}
